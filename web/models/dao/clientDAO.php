@@ -6,7 +6,6 @@ class ClientDAO {
 
   private static $connexion; 
   // Objet de connexion
-
   
 
   function findByIdClient($idClient) {
