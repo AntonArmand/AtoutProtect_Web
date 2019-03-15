@@ -1,6 +1,8 @@
 <?php
 
+
 ?>
+<<<<<<< HEAD
 
 <!doctype html>
 <html class="no-js" lang="fr">
@@ -34,3 +36,11 @@
 
   </body>
 </html>
+=======
+<!DOCTYPE html>
+<html>
+	jifdkzdjikosjfjfikopd
+</HTML>
+
+
+>>>>>>> b8a4cf13ed238309d273b86ab82c8f350f7bb804
