@@ -3,8 +3,8 @@
 <b>Projet réalisé par :</b>
 
 <ul>
-  <li>ANTON Anton,</li>
-  <li>LALA Clément,</li>
+  <li>ANTON Armand,</li>
+  <li>BAUNAC Matthieu,</li>
 </ul>
 
 </br></br>
