@@ -1,7 +1,7 @@
 <?php
 
-class Paypal  {
-	private $idPaypal;
+class HiPass  {
+	private $idHipass;
 
 
   /** CONSTRUCTEUR **/
@@ -14,18 +14,18 @@ class Paypal  {
 
     /** SETTER -- START **/
 
-  	function getIdPaypal() 
+  	function getIdHipass() 
   	{
-   		return $this->idPaypal;
+   		return $this->idHipass;
   	}
 
     /** GETTER -- END **/
 
     /** SETTER -- START **/
 
-    function set_idPaypal($idPaypal) 
+    function set_idHipass($idHipass) 
     {
-      $this->idPaypal = $idPaypal;
+      $this->idHipass = $idHipass;
     }
 
   /** SETTER -- END **/

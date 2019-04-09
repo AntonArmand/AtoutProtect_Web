@@ -1,7 +1,7 @@
 <?php
 
-class Paypal  {
-	private $idPaypal;
+class Achat  {
+	private $idAchat;
 
 
   /** CONSTRUCTEUR **/
@@ -14,18 +14,18 @@ class Paypal  {
 
     /** SETTER -- START **/
 
-  	function getIdPaypal() 
+  	function getIdAchat() 
   	{
-   		return $this->idPaypal;
+   		return $this->idAchat;
   	}
 
     /** GETTER -- END **/
 
     /** SETTER -- START **/
 
-    function set_idPaypal($idPaypal) 
+    function set_idAchat($idAchat) 
     {
-      $this->idPaypal = $idPaypal;
+      $this->idAchat = $idAchat;
     }
 
   /** SETTER -- END **/
@@ -34,7 +34,7 @@ class Paypal  {
   function hydrater(array $tableau) 
   {
     foreach ($tableau as $cle => $valeur) {
-      $methode = 'set_' . $cle;
+      $methode = 'set' . $cle;
       if (method_exists($this, $methode)) {
         $this->$methode($valeur);
       }
