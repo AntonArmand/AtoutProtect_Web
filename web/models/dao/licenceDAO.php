@@ -9,7 +9,7 @@ class LicenceDAO {
   
 
   function findByCodeLicence($codeLicence) {
-    $sql = "SELECT * FROM licence WHERE codeLicence=:codeLicence";
+    $sql = "SELECT * FROM LICENCE WHERE codeLicence=:codeLicence";
     try {
       $sth = self::get_connexion()->prepare($sql);
       $sth->execute(array(":codeLicence" => $codeLicence));
@@ -26,7 +26,7 @@ class LicenceDAO {
 
 
   function findAllLicence() {
-    $sql = "SELECT * FROM licence";
+    $sql = "SELECT * FROM LICENCE";
     try {
       $sth = self::get_connexion()->prepare($sql);
       $sth->execute();
@@ -47,7 +47,7 @@ class LicenceDAO {
 
 
   function insertLicence($codeLicence) {
-    $sql = 'INSERT INTO licence(codeLicence) VALUES (:codeLicence)';
+    $sql = 'INSERT INTO LICENCE(codeLicence) VALUES (:codeLicence)';
     try {
       $sth = self::get_connexion()->prepare($sql);
       $sth->execute(array(
@@ -63,7 +63,7 @@ class LicenceDAO {
 
 
   function updateLicence($codeLicence) {
-  $sql = "UPDATE licence SET codeLicence = :codeLicence WHERE codeLicence=:codeLicence ";
+  $sql = "UPDATE LICENCE SET codeLicence = :codeLicence WHERE codeLicence=:codeLicence ";
     try {
       $sth = self::get_connexion()->prepare($sql);
       var_dump($sth);
@@ -83,7 +83,7 @@ class LicenceDAO {
 
 
   function deleteLicence($codeLicence) {
-    $sql = "DELETE FROM licence WHERE codeLicence =:codeLicence ";
+    $sql = "DELETE FROM LICENCE WHERE codeLicence =:codeLicence ";
       try{
 
       }

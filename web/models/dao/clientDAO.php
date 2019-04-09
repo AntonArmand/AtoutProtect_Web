@@ -9,7 +9,7 @@ class ClientDAO {
   
 
   function findByIdClient($idClient) {
-    $sql = "SELECT * FROM client WHERE idClient=:idClient";
+    $sql = "SELECT * FROM CLIENT WHERE idClient=:idClient";
     try {
       $sth = self::get_connexion()->prepare($sql);
       $sth->execute(array(":idClient" => $idClient));
@@ -26,7 +26,7 @@ class ClientDAO {
 
 
   function findAllClient() {
-    $sql = "SELECT * FROM client";
+    $sql = "SELECT * FROM CLIENT";
     try {
       $sth = self::get_connexion()->prepare($sql);
       $sth->execute();
@@ -47,7 +47,7 @@ class ClientDAO {
 
 
   function insertClient($idClient, $nomClient, $prenomClient, $mailClient, $mdpClient, $dateInscriptionClient) {
-    $sql = 'INSERT INTO client(idClient, nomClient, prenomClient, mailClient, mdpClient, dateInscriptionClient) VALUES (:idClient, :nomClient,:prenomClient, :mailClient, :mdpClient, :dateInscriptionClient)';
+    $sql = 'INSERT INTO CLIENT(idClient, nomClient, prenomClient, mailClient, mdpClient, dateInscriptionClient) VALUES (:idClient, :nomClient,:prenomClient, :mailClient, :mdpClient, :dateInscriptionClient)';
     try {
       $sth = self::get_connexion()->prepare($sql);
       $sth->execute(array(
@@ -68,7 +68,7 @@ class ClientDAO {
 
 
   function updateClient($idClient, $nomClient, $prenomClient, $mailClient, $mdpClient, $dateInscriptionClient) {
-  $sql = "UPDATE client SET idClient = :idClient, nomClient = :nomClient, prenomClient = :prenomClient, mailClient = :mailClient, mdpClient = :mdpClient, dateInscriptionClient= :dateInscriptionClient WHERE idClient=:idClient ";
+  $sql = "UPDATE CLIENT SET idClient = :idClient, nomClient = :nomClient, prenomClient = :prenomClient, mailClient = :mailClient, mdpClient = :mdpClient, dateInscriptionClient= :dateInscriptionClient WHERE idClient=:idClient ";
     try {
       $sth = self::get_connexion()->prepare($sql);
       var_dump($sth);
@@ -93,7 +93,7 @@ class ClientDAO {
 
 
   function deleteClient($idClient) {
-    $sql = "DELETE FROM client WHERE idClient =:idClient ";
+    $sql = "DELETE FROM CLIENT WHERE idClient =:idClient ";
   
       $sth = self::get_connexion()->prepare($sql);
       $sth->execute(array(":idClient" => $idClient));

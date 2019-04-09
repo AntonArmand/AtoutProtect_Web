@@ -9,7 +9,7 @@ class AchatDAO {
   
 
   function findByIdAchat($idAchat) {
-    $sql = "SELECT * FROM achat WHERE idAchat=:idAchat";
+    $sql = "SELECT * FROM ACHAT WHERE idAchat=:idAchat";
     try {
       $sth = self::get_connexion()->prepare($sql);
       $sth->execute(array(":idAchat" => $idAchat));
@@ -26,7 +26,7 @@ class AchatDAO {
 
 
   function findAllAchat() {
-    $sql = "SELECT * FROM achat";
+    $sql = "SELECT * FROM ACHAT";
     try {
       $sth = self::get_connexion()->prepare($sql);
       $sth->execute();
@@ -47,7 +47,7 @@ class AchatDAO {
 
 
   function insertAchat($idAchat) {
-    $sql = 'INSERT INTO achat(idAchat) VALUES (:idAchat)';
+    $sql = 'INSERT INTO ACHAT(idAchat) VALUES (:idAchat)';
     try {
       $sth = self::get_connexion()->prepare($sql);
       $sth->execute(array(
@@ -63,7 +63,7 @@ class AchatDAO {
 
 
   function updateAchat($idAchat) {
-  $sql = "UPDATE achat SET idAchat = :idAchat WHERE idAchat=:idAchat ";
+  $sql = "UPDATE ACHAT SET idAchat = :idAchat WHERE idAchat=:idAchat ";
     try {
       $sth = self::get_connexion()->prepare($sql);
       var_dump($sth);
@@ -82,7 +82,7 @@ class AchatDAO {
 
 
   function deleteAchat($idAchat) {
-    $sql = "DELETE FROM achat WHERE idAchat =:idAchat ";
+    $sql = "DELETE FROM ACHAT WHERE idAchat =:idAchat ";
   
       $sth = self::get_connexion()->prepare($sql);
       $sth->execute(array(":idAchat" => $idAchat));

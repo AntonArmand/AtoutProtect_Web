@@ -9,7 +9,7 @@ class HipassDAO {
   
 
   function findByIdHipass($idHipass) {
-    $sql = "SELECT * FROM hipass WHERE idHipass=:idHipass";
+    $sql = "SELECT * FROM HIPASS WHERE idHipass=:idHipass";
     try {
       $sth = self::get_connexion()->prepare($sql);
       $sth->execute(array(":idHipass" => $idHipass));
@@ -26,7 +26,7 @@ class HipassDAO {
 
 
   function findAllHipass() {
-    $sql = "SELECT * FROM idHipass";
+    $sql = "SELECT * FROM HIPASS";
     try {
       $sth = self::get_connexion()->prepare($sql);
       $sth->execute();
@@ -47,7 +47,7 @@ class HipassDAO {
 
 
   function insertHipass($idHipass) {
-    $sql = 'INSERT INTO hipass(idHipass) VALUES (:idHipass)';
+    $sql = 'INSERT INTO HIPASS(idHipass) VALUES (:idHipass)';
     try {
       $sth = self::get_connexion()->prepare($sql);
       $sth->execute(array(
@@ -63,7 +63,7 @@ class HipassDAO {
 
 
   function updateHipass($idHipass) {
-  $sql = "UPDATE hipass SET idHipass = :idHipass WHERE idHipass=:idHipass ";
+  $sql = "UPDATE HIPASS SET idHipass = :idHipass WHERE idHipass=:idHipass ";
     try {
       $sth = self::get_connexion()->prepare($sql);
       var_dump($sth);
@@ -82,7 +82,7 @@ class HipassDAO {
 
 
   function deleteHipass($idHipass) {
-    $sql = "DELETE FROM hipass WHERE idHipass =:idHipass ";
+    $sql = "DELETE FROM HIPASS WHERE idHipass =:idHipass ";
   
       $sth = self::get_connexion()->prepare($sql);
       $sth->execute(array(":idHipass" => $idHipass));

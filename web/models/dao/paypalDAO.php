@@ -9,7 +9,7 @@ class PaypalDAO {
   
 
   function findByIdPaypal($idPaypal) {
-    $sql = "SELECT * FROM paypal WHERE idPaypal=:idPaypal";
+    $sql = "SELECT * FROM PAYPAL WHERE idPaypal=:idPaypal";
     try {
       $sth = self::get_connexion()->prepare($sql);
       $sth->execute(array(":idPaypal" => $idPaypal));
@@ -26,7 +26,7 @@ class PaypalDAO {
 
 
   function findAllPaypal() {
-    $sql = "SELECT * FROM paypal";
+    $sql = "SELECT * FROM PAYPAL";
     try {
       $sth = self::get_connexion()->prepare($sql);
       $sth->execute();
@@ -47,7 +47,7 @@ class PaypalDAO {
 
 
   function insertPaypal($idPaypal) {
-    $sql = 'INSERT INTO paypal(idPaypal) VALUES (:idPaypal)';
+    $sql = 'INSERT INTO PAYPAL(idPaypal) VALUES (:idPaypal)';
     try {
       $sth = self::get_connexion()->prepare($sql);
       $sth->execute(array(
@@ -63,7 +63,7 @@ class PaypalDAO {
 
 
   function updatePaypal($idPaypal) {
-  $sql = "UPDATE hipass SET idPaypal = :idPaypal WHERE idPaypal=:idPaypal ";
+  $sql = "UPDATE PAYPAL SET idPaypal = :idPaypal WHERE idPaypal=:idPaypal ";
     try {
       $sth = self::get_connexion()->prepare($sql);
       var_dump($sth);
@@ -82,7 +82,7 @@ class PaypalDAO {
 
 
   function deletePaypal($idPaypal) {
-    $sql = "DELETE FROM hipass WHERE idPaypal =:idPaypal ";
+    $sql = "DELETE FROM PAYPAL WHERE idPaypal =:idPaypal ";
   
       $sth = self::get_connexion()->prepare($sql);
       $sth->execute(array(":idPaypal" => $idPaypal));
