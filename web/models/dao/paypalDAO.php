@@ -9,7 +9,7 @@ class PaypalDAO {
   
 
   function findByIdPaypal($idPaypal) {
-    $sql = "select * from paypal where idPaypal=:idPaypal";
+    $sql = "SELECT * FROM paypal WHERE idPaypal=:idPaypal";
     try {
       $sth = self::get_connexion()->prepare($sql);
       $sth->execute(array(":idPaypal" => $idPaypal));
@@ -26,7 +26,7 @@ class PaypalDAO {
 
 
   function findAllPaypal() {
-    $sql = "select * from paypal";
+    $sql = "SELECT * FROM paypal";
     try {
       $sth = self::get_connexion()->prepare($sql);
       $sth->execute();

@@ -9,7 +9,7 @@ class ClientDAO {
   
 
   function findByIdClient($idClient) {
-    $sql = "select * from client where idClient=:idClient";
+    $sql = "SELECT * FROM client WHERE idClient=:idClient";
     try {
       $sth = self::get_connexion()->prepare($sql);
       $sth->execute(array(":idClient" => $idClient));
@@ -26,7 +26,7 @@ class ClientDAO {
 
 
   function findAllClient() {
-    $sql = "select * from client";
+    $sql = "SELECT * FROM client";
     try {
       $sth = self::get_connexion()->prepare($sql);
       $sth->execute();

@@ -9,7 +9,7 @@ class HipassDAO {
   
 
   function findByIdHipass($idHipass) {
-    $sql = "select * from hipass where idHipass=:idHipass";
+    $sql = "SELECT * FROM hipass WHERE idHipass=:idHipass";
     try {
       $sth = self::get_connexion()->prepare($sql);
       $sth->execute(array(":idHipass" => $idHipass));
@@ -26,7 +26,7 @@ class HipassDAO {
 
 
   function findAllHipass() {
-    $sql = "select * from idHipass";
+    $sql = "SELECT * FROM idHipass";
     try {
       $sth = self::get_connexion()->prepare($sql);
       $sth->execute();
