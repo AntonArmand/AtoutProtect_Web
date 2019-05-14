@@ -7,6 +7,7 @@ class Client  {
   private $mailClient;
   private $mdpClient;
   private $dateInscriptionClient;
+  private $dateModificationClient;
 
 
   /** CONSTRUCTEUR **/
@@ -47,8 +48,11 @@ class Client  {
     {
       return $this->dateInscriptionClient;
     }
-
-
+    
+    function getDateModificationClient() 
+    {
+      return $this->dateModificationClient;
+    }
     /** GETTER -- END **/
 
     /** SETTER -- START **/
@@ -82,7 +86,12 @@ class Client  {
       $this->dateInscriptionClient = $dateInscriptionClient;
     }
 
-  /** SETTER -- END **/
+    function set_dateModificationClient($dateModificationClient) 
+    {
+      $this->dateModificationClient = $dateModificationClient;
+    }
+
+    /** SETTER -- END **/
 
 
   function hydrater(array $tableau) 

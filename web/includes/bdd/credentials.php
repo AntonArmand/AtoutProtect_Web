@@ -1,7 +1,7 @@
 <?php
 
 $user = 'root';
-$pass = 'rpi';
+$pass = '';
 $host = 'localhost';
 $base = 'aprotect';
 $dsn = 'mysql:host='.$host.';dbname='.$base;
