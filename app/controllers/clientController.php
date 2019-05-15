@@ -1,5 +1,5 @@
 <?php
-include_once '../includes/functions.php';
+include_once '../inc/functions.php';
 include_once '../models/dao/clientDAO.php';
 include_once '../models/clientModel.php';
 
@@ -43,7 +43,7 @@ if($register)
         $_SESSION['dateInscriptionClient'] = $client->getDateInscriptionClient();
         $_SESSION['dateModificationClient'] = $client->getDateModificationClient();
 
-        header('Location: ../index.php');
+        header('Location: ../../index.php');
     }
 
 }
@@ -89,5 +89,7 @@ else if($login)
         $_SESSION['mailClient'] = $client->getMailClient();
         $_SESSION['dateInscriptionClient'] = $client->getDateInscriptionClient();
         $_SESSION['dateModificationClient'] = $client->getDateModificationClient();
+        header('Location: ../../index.php');
+
     }
 }
