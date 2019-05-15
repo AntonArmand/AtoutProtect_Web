@@ -14,10 +14,13 @@ session_start();
 
 if($register)
 {
-    $mailClient = isset($_POST['mailClient']) ? $_POST['mailClient'] : '';
-    $mdpClient  = isset($_POST['mdpClient']) ? $_POST['mdpClient'] : '';
-    $nomClient  = isset($_POST['nomClient']) ? $_POST['nomClient'] : '';
+    $mailClient    = isset($_POST['mailClient']) ? $_POST['mailClient'] : '';
+    $mdpClient     = isset($_POST['mdpClient']) ? $_POST['mdpClient'] : '';
+    $nomClient     = isset($_POST['nomClient']) ? $_POST['nomClient'] : '';
     $prenomClient  = isset($_POST['prenomClient']) ? $_POST['prenomClient'] : '';
+
+
+
 
     $array = array("nomClient" => $nomClient,
                         "prenomClient" => $prenomClient,
