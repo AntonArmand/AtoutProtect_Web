@@ -25,7 +25,6 @@ private static function get_connexion() {
     return self::$connexion;
   }
   
-
   function findByIdClient($idClient) {
     $sql = "SELECT * FROM CLIENT WHERE idClient=:idClient";
     try {
@@ -81,9 +80,6 @@ private static function get_connexion() {
     return current($client);    
     // Retourne un tableau d'objets
   }
-
-
-
 
   function findAllClient() {
     $sql = "SELECT * FROM CLIENT";

@@ -1,5 +1,9 @@
 <?php
 include_once '../controllers/clientController.php';
+if($_SESSION == null)
+{
+  header('Location: ../index.php');
+}
 ?>
 <!DOCTYPE html>
 <html>

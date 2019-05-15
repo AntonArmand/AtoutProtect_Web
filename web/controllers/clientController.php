@@ -43,7 +43,7 @@ if($register)
         $_SESSION['dateInscriptionClient'] = $client->getDateInscriptionClient();
         $_SESSION['dateModificationClient'] = $client->getDateModificationClient();
 
-        header('Location: ../index.php');
+        header('Location: index.php');
     }
 
 }
