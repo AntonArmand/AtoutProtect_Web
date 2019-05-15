@@ -58,7 +58,7 @@ include_once 'app/views/header.php';
 					</div>
 					<div class="col-lg-7">
 						<div class="home_right_img">
-							<img class="img-fluid" src="img/banner/home-right.png" alt="">
+							<img class="img-fluid" src="includes/img/banner/home-right.png" alt="">
 						</div>
 					</div>
 				</div>
@@ -66,9 +66,9 @@ include_once 'app/views/header.php';
 		</div>
 	</section>
 	<!--================End Home Banner Area =================-->
-
+	</br>
 	<!--================Start Features Area =================-->
-	<section class="section_gap features_area">
+	<section id="section" class="section_gap features_area">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-lg-8 text-center">
@@ -83,7 +83,7 @@ include_once 'app/views/header.php';
 			<div class="row align-items-center">
 				<div class="col-lg-6">
 					<div class="left_features">
-						<img class="img-fluid" src="img/f-img.png" alt="">
+						<img class="img-fluid" src="includes/img/f-img.png" alt="">
 					</div>
 				</div>
 				<div class="col-lg-5 offset-lg-1">
@@ -162,7 +162,7 @@ include_once 'app/views/header.php';
 							</div>
 							<div class="col-lg-6">
 								<div class="chart_img">
-									<img class="img-fluid" src="img/chart.png" alt="">
+									<img class="img-fluid" src="includes/img/chart.png" alt="">
 								</div>
 							</div>
 						</div>
@@ -179,7 +179,7 @@ include_once 'app/views/header.php';
 							</div>
 							<div class="col-lg-6">
 								<div class="chart_img">
-									<img class="img-fluid" src="img/chart.png" alt="">
+									<img class="img-fluid" src="includes/img/chart.png" alt="">
 								</div>
 							</div>
 						</div>
@@ -196,7 +196,7 @@ include_once 'app/views/header.php';
 							</div>
 							<div class="col-lg-6 text-right">
 								<div class="chart_img">
-									<img class="img-fluid" src="img/chart.png" alt="">
+									<img class="img-fluid" src="includes/img/chart.png" alt="">
 								</div>
 							</div>
 						</div>
@@ -222,7 +222,7 @@ include_once 'app/views/header.php';
 			<div class="row features_content">
 				<div class="col-lg-4 offset-lg-1">
 					<div class="big_f_left">
-						<img class="img-fluid" src="img/f-img1.png" alt="">
+						<img class="img-fluid" src="includes/img/f-img1.png" alt="">
 					</div>
 				</div>
 				<div class="col-lg-4 offset-lg-2">
@@ -234,9 +234,9 @@ include_once 'app/views/header.php';
 					</div>
 				</div>
 				<div class="border-line"></div>
-				<img class="shape1"src="img/shape1.png" alt="">		
-				<img class="shape2"src="img/shape2.png" alt="">		
-				<img class="shape3"src="img/shape1.png" alt="">		
+				<img class="shape1"src="includes/img/shape1.png" alt="">		
+				<img class="shape2"src="includes/img/shape2.png" alt="">		
+				<img class="shape3"src="includes/img/shape1.png" alt="">		
 			</div>
 
 			<div class="row features_content bottom-features">
@@ -250,20 +250,20 @@ include_once 'app/views/header.php';
 				</div>
 				<div class="col-lg-5 offset-lg-2">
 					<div class="big_f_left">
-						<img class="img-fluid" src="img/f-img2.png" alt="">
+						<img class="img-fluid" src="includes/img/f-img2.png" alt="">
 					</div>
 				</div>
 				<div class="border-line"></div>
-				<img class="shape1"src="img/shape1.png" alt="">		
-				<img class="shape2"src="img/shape2.png" alt="">		
-				<img class="shape3"src="img/shape1.png" alt="">		
+				<img class="shape1"src="includes/img/shape1.png" alt="">		
+				<img class="shape2"src="includes/img/shape2.png" alt="">		
+				<img class="shape3"src="includes/img/shape1.png" alt="">		
 			</div>
 		</div>
 	</section>
 	<!--================End Big Features Area =================-->
 	
 	<!--================Srart Pricing Area =================-->
-	<section class="price_area section_gap">
+	<section id="licence" class="price_area section_gap">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-lg-8 text-center">
@@ -338,7 +338,7 @@ include_once 'app/views/header.php';
 	<!--================End Pricing Area =================-->
 
 	<!--================ Start Testimonial Area =================-->
-	<div class="section_gap_top testimonial_area">
+	<div id="about-us" class="section_gap_top testimonial_area">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-lg-8 text-center">
@@ -355,7 +355,7 @@ include_once 'app/views/header.php';
 						<!-- single testimonial -->
 						<div class="single_testimonial">
 							<div class="testimonial_head">
-								<img src="img/quote.png" alt="">
+								<img src="includes/img/quote.png" alt="">
 								<h4>Fanny Spencer</h4>
 								<div class="review">
 									<i class="fa fa-star"></i>
@@ -372,7 +372,7 @@ include_once 'app/views/header.php';
 
 						<div class="single_testimonial">
 							<div class="testimonial_head">
-								<img src="img/quote.png" alt="">
+								<img src="includes/img/quote.png" alt="">
 								<h4>Fanny Spencer</h4>
 								<div class="review">
 									<i class="fa fa-star"></i>
@@ -389,7 +389,7 @@ include_once 'app/views/header.php';
 
 						<div class="single_testimonial">
 							<div class="testimonial_head">
-								<img src="img/quote.png" alt="">
+								<img src="includes/img/quote.png" alt="">
 								<h4>Fanny Spencer</h4>
 								<div class="review">
 									<i class="fa fa-star"></i>
@@ -406,7 +406,7 @@ include_once 'app/views/header.php';
 
 						<div class="single_testimonial">
 							<div class="testimonial_head">
-								<img src="img/quote.png" alt="">
+								<img src="includes/img/quote.png" alt="">
 								<h4>Fanny Spencer</h4>
 								<div class="review">
 									<i class="fa fa-star"></i>
@@ -436,37 +436,37 @@ include_once 'app/views/header.php';
 						<!-- single-brand -->
 						<div class="single-brand-item d-table">
 							<div class="d-table-cell">
-								<img src="img/brands/logo1.png" alt="">
+								<img src="includes/img/brands/logo1.png" alt="">
 							</div>
 						</div>
 						<!-- single-brand -->
 						<div class="single-brand-item d-table">
 							<div class="d-table-cell">
-								<img src="img/brands/logo2.png" alt="">
+								<img src="includes/img/brands/logo2.png" alt="">
 							</div>
 						</div>
 						<!-- single-brand -->
 						<div class="single-brand-item d-table">
 							<div class="d-table-cell">
-								<img src="img/brands/logo3.png" alt="">
+								<img src="includes/img/brands/logo3.png" alt="">
 							</div>
 						</div>
 						<!-- single-brand -->
 						<div class="single-brand-item d-table">
 							<div class="d-table-cell">
-								<img src="img/brands/logo4.png" alt="">
+								<img src="includes/img/brands/logo4.png" alt="">
 							</div>
 						</div>
 						<!-- single-brand -->
 						<div class="single-brand-item d-table">
 							<div class="d-table-cell">
-								<img src="img/brands/logo5.png" alt="">
+								<img src="includes/img/brands/logo5.png" alt="">
 							</div>
 						</div>
 						<!-- single-brand -->
 						<div class="single-brand-item d-table">
 							<div class="d-table-cell">
-								<img src="img/brands/logo6.png" alt="">
+								<img src="incldes/img/brands/logo6.png" alt="">
 							</div>
 						</div>
 					</div>
@@ -494,23 +494,23 @@ include_once 'app/views/header.php';
 
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="js/jquery-3.2.1.min.js"></script>
-	<script src="js/popper.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/stellar.js"></script>
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
-	<script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
-	<script src="vendors/isotope/isotope-min.js"></script>
-	<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-	<script src="js/jquery.ajaxchimp.min.js"></script>
-	<script src="vendors/counter-up/jquery.waypoints.min.js"></script>
-	<script src="vendors/counter-up/jquery.counterup.min.js"></script>
-	<script src="js/mail-script.js"></script>
+	<script src="includes/js/jquery-3.2.1.min.js"></script>
+	<script src="includes/js/popper.js"></script>
+	<script src="includes/js/bootstrap.min.js"></script>
+	<script src="includes/js/stellar.js"></script>
+	<script src="includes/js/jquery.magnific-popup.min.js"></script>
+	<script src="includes/vendors/nice-select/js/jquery.nice-select.min.js"></script>
+	<script src="includes/vendors/isotope/imagesloaded.pkgd.min.js"></script>
+	<script src="includes/vendors/isotope/isotope-min.js"></script>
+	<script src="includes/vendors/owl-carousel/owl.carousel.min.js"></script>
+	<script src="includes/js/jquery.ajaxchimp.min.js"></script>
+	<script src="includes/vendors/counter-up/jquery.waypoints.min.js"></script>
+	<script src="includes/vendors/counter-up/jquery.counterup.min.js"></script>
+	<script src="includes/js/mail-script.js"></script>
 	<!--gmaps Js-->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
-	<script src="js/gmaps.min.js"></script>
-	<script src="js/theme.js"></script>
+	<script src="includes/https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+	<script src="includes/js/gmaps.min.js"></script>
+	<script src="includes/js/theme.js"></script>
 </body>
 
 </html>

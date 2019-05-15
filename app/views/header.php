@@ -17,23 +17,9 @@
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav justify-content-center">
 							<li class="nav-item active"><a class="nav-link" href="index.php">Accueil</a></li>
-							<li class="nav-item"><a class="nav-link" href="features.php">Features</a></li>
-							<li class="nav-item"><a class="nav-link" href="price.php">Pricing</a></li>
-							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								 aria-expanded="false">Pages</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="elements.php">Elements</a></li>
-								</ul>
-							</li>
-							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								 aria-expanded="false">Blog</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="blog.php">Blog</a></li>
-									<li class="nav-item"><a class="nav-link" href="single-blog.php">Blog Details</a></li>
-								</ul>
-							</li>
+							<li class="nav-item"><a class="nav-link" href="index.php#features">Features</a></li>
+							<li class="nav-item"><a class="nav-link" href="index.php#licence">Licence</a></li>
+							<li class="nav-item"><a class="nav-link" href="index.php#about-us">Qui somme nous ?</a></li>
 							<li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
