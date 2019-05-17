@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="icon" href="includes/img/favicon.png" type="image/png">
-	<title>GaaS Software</title>
+	<title>Atout Protect</title>
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="includes/css/bootstrap.css">
 	<link rel="stylesheet" href="includes/vendors/linericon/style.css">
@@ -36,21 +36,20 @@ include_once 'app/views/header.php';
 					<div class="col-lg-5">
 						<div class="banner_content">
 							<h2>
-								Mass People <br>
-								Oriented Software
+								La solution <br>
+								sécurité avancée
 							</h2>
 							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-								magna aliqua. Ut enim ad minim.
-								sed do eiusmod tempor incididunt.
+								Atout Protect est une technologie de protection 
+								anti-piratage permetant de sécuriser vos programmes
 							</p>
 							<div class="d-flex align-items-center">
-								<a class="primary_btn" href="#"><span>Get Started</span></a>
+								<a class="primary_btn" href="#"><span>Nos offres</span></a>
 								<a id="play-home-video" class="video-play-button" href="https://www.youtube.com/watch?time_continue=2&v=J9YzcEe29d0">
 									<span></span>
 								</a>
 								<div class="watch_video text-uppercase">
-									watch the video
+									Découvrir
 								</div>
 							</div>
 						</div>
@@ -72,17 +71,17 @@ include_once 'app/views/header.php';
 			<div class="row justify-content-center">
 				<div class="col-lg-8 text-center">
 					<div class="main_title">
-						<p class="top_title">Exclusive Stunning Features</p>
-						<h2>A Complete Software Based Website</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-						<a href="#" class="primary_btn"><span>Start Free Trial Now!</span></a>
+						<p class="top_title">La sécurité avant tous</p>
+						<h2>Leader dans la sécurisation des programmes</h2>
+						<p>Notre objectif est de vous fournir une solution de sécurité complète et fiable. Nous proposons trois gammes différentes de produit afin de répondre au mieux à votre besoin.</p>
+						<a href="#" class="primary_btn"><span>Découvrir nos offres!!</span></a>
 					</div>
 				</div>
 			</div>
 			<div class="row align-items-center">
 				<div class="col-lg-6">
 					<div class="left_features">
-						<img class="img-fluid" src="includes/img/f-img.png" alt="">
+						<img class="img-fluid" src="includes/img/mainFormApp.JPG" alt="">
 					</div>
 				</div>
 				<div class="col-lg-5 offset-lg-1">
