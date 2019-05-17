@@ -9,7 +9,7 @@
                             <div class="f_title">
                                 <h3>A Propos</h3>
                             </div>
-                            <p>Projet réalisé dans le cadre du Bachelor RPI - promo Engelbart 2018 - 2019.</p>
+                            <p>Projet réalisé dans le cadre du Bachelor RPI<br>Promo Engelbart 2018 - 2019.</p>
                             <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 Copyright &copy;<script>document.write(new Date().getFullYear());</script> Tous droits réservés</p>
                         </aside>
@@ -19,7 +19,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> Tous 
                             <div class="f_title">
                                 <h3>Newsletter</h3>
                             </div>
-                            <p>Stay updated with our latest trends</p>
+                            <p>Se tenir informé</p>
                             <div id="mc_embed_signup">
                                 <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe_form relative">
                                     <div class="input-group d-flex flex-row">
@@ -34,9 +34,9 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> Tous 
                     <div class="col-lg-2">
                         <aside class="f_widget social_widget">
                             <div class="f_title">
-                                <h3>Follow Me</h3>
+                                <h3>Nous suivre</h3>
                             </div>
-                            <p>Let us be social</p>
+                            <p>Nos réseaux</p>
                             <ul class="list">
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>

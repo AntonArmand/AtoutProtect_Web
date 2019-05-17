@@ -88,30 +88,30 @@ include_once 'app/views/header.php';
 					<div class="single_feature">
 						<div class="feature_head">
 							<span class="lnr lnr-screen"></span>
-							<h4>Utilisation simple</h4>
+							<h4>Choisir votre solution</h4>
 						</div>
 						<div class="feature_content">
-							<p>Here, I focus on a range of items and features that we use in life without giving them a second thought such as Coca Cola.</p>
+							<p>En fonction de vos besoins, choisissez la solution la plus adaptée.</p>
 						</div>
 					</div>
 					<!-- single features -->
 					<div class="single_feature">
 						<div class="feature_head">
 							<span class="lnr lnr-screen"></span>
-							<h4>Solution adaptative</h4>
+							<h4>Paiement</h4>
 						</div>
 						<div class="feature_content">
-							<p>Here, I focus on a range of items and features that we use in life without giving them a second thought such as Coca Cola.</p>
+							<p>Le paiement est 100% sécurisé via Paypal et AlloPass.</p>
 						</div>
 					</div>
 					<!-- single features -->
 					<div class="single_feature">
 						<div class="feature_head">
 							<span class="lnr lnr-screen"></span>
-							<h4></h4>
+							<h4>Installer</h4>
 						</div>
 						<div class="feature_content">
-							<p>Here, I focus on a range of items and features that we use in life without giving them a second thought such as Coca Cola.</p>
+							<p>Le paiement validé et confirmé, téléchargez la solution.</p>
 						</div>
 					</div>
 				</div>
@@ -277,10 +277,9 @@ include_once 'app/views/header.php';
 						</div>
 						<div class="price_body">
 							<ul class="list">
-								<li><a href="#">2.5 GB Space</a></li>
-								<li><a href="#">Secure Online Transfer</a></li>
-								<li><a href="#">Unlimited Styles</a></li>
-								<li><a href="#">Customer Service</a></li>
+								<li><a href="#">Support pendant 1 mois</a></li>
+								<li><a href="#">Compatible C#</a></li>
+								<li><a href="#">Paiement sécurisé</a></li>
 							</ul>
 						</div>
 						<div class="price_footer">
@@ -296,10 +295,9 @@ include_once 'app/views/header.php';
 						</div>
 						<div class="price_body">
 							<ul class="list">
-								<li><a href="#">10 GB Space</a></li>
-								<li><a href="#">Secure Online Transfer</a></li>
-								<li><a href="#">Unlimited Styles</a></li>
-								<li><a href="#">Customer Service</a></li>
+								<li><a href="#">Support pendant 1 mois</a></li>
+								<li><a href="#">Compatible C#</a></li>
+								<li><a href="#">Paiement sécurisé</a></li>
 							</ul>
 						</div>
 						<div class="price_footer">
@@ -315,10 +313,9 @@ include_once 'app/views/header.php';
 						</div>
 						<div class="price_body">
 							<ul class="list">
-								<li><a href="#">Unlimited Space</a></li>
-								<li><a href="#">Secure Online Transfer</a></li>
-								<li><a href="#">Unlimited Styles</a></li>
-								<li><a href="#">Customer Service</a></li>
+								<li><a href="#">Support pendant 1 mois</a></li>
+								<li><a href="#">Compatible C#</a></li>
+								<li><a href="#">Paiement sécurisé</a></li>
 							</ul>
 						</div>
 						<div class="price_footer">
@@ -338,8 +335,7 @@ include_once 'app/views/header.php';
 			<div class="row justify-content-center">
 				<div class="col-lg-8 text-center">
 					<div class="main_title">
-						<h2>What Our Clients Say About Us</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+						<h2>Ce que nos clients disent de nous</h2>
 					</div>
 				</div>
 			</div>
@@ -350,9 +346,8 @@ include_once 'app/views/header.php';
 						<div class="single_testimonial">
 							<div class="testimonial_head">
 								<img src="includes/img/quote.png" alt="">
-								<h4>Fanny Spencer</h4>
+								<h4>Bristan Chell</h4>
 								<div class="review">
-									<i class="fa fa-star"></i>
 									<i class="fa fa-star"></i>
 									<i class="fa fa-star"></i>
 									<i class="fa fa-star"></i>
@@ -360,14 +355,14 @@ include_once 'app/views/header.php';
 								</div>
 							</div>
 							<div class="testimonial_content">
-								<p>As conscious traveling Paup ers we must always be oncerned about our dear Mother Earth. If you think about it, you travel across her faceand She is the host to your journey.</p>
+								<p>Je cherchais une solution afin de sécuriser mon programme. AtouProtect répond parfaitement à mes attentes pour un prix abordable.</p>
 							</div>
 						</div>
 
 						<div class="single_testimonial">
 							<div class="testimonial_head">
 								<img src="includes/img/quote.png" alt="">
-								<h4>Fanny Spencer</h4>
+								<h4>Hella Alexeeva</h4>
 								<div class="review">
 									<i class="fa fa-star"></i>
 									<i class="fa fa-star"></i>
@@ -377,16 +372,15 @@ include_once 'app/views/header.php';
 								</div>
 							</div>
 							<div class="testimonial_content">
-								<p>As conscious traveling Paup ers we must always be oncerned about our dear Mother Earth. If you think about it, you travel across her faceand She is the host to your journey.</p>
+								<p>Produit conforme à la description. Cette solution clef en main nous à permis de sécuriser notre application très rapidement !!</p>
 							</div>
 						</div>
 
 						<div class="single_testimonial">
 							<div class="testimonial_head">
 								<img src="includes/img/quote.png" alt="">
-								<h4>Fanny Spencer</h4>
+								<h4>Joseph Gorshkov</h4>
 								<div class="review">
-									<i class="fa fa-star"></i>
 									<i class="fa fa-star"></i>
 									<i class="fa fa-star"></i>
 									<i class="fa fa-star"></i>
@@ -394,14 +388,14 @@ include_once 'app/views/header.php';
 								</div>
 							</div>
 							<div class="testimonial_content">
-								<p>As conscious traveling Paup ers we must always be oncerned about our dear Mother Earth. If you think about it, you travel across her faceand She is the host to your journey.</p>
+								<p>Excellent produit !! assistance au top.</p>
 							</div>
 						</div>
 
 						<div class="single_testimonial">
 							<div class="testimonial_head">
 								<img src="includes/img/quote.png" alt="">
-								<h4>Fanny Spencer</h4>
+								<h4>Veronica Avdeeva</h4>
 								<div class="review">
 									<i class="fa fa-star"></i>
 									<i class="fa fa-star"></i>
@@ -411,7 +405,7 @@ include_once 'app/views/header.php';
 								</div>
 							</div>
 							<div class="testimonial_content">
-								<p>As conscious traveling Paup ers we must always be oncerned about our dear Mother Earth. If you think about it, you travel across her faceand She is the host to your journey.</p>
+								<p>Produit simplement parfait !! Je recommande.</p>
 							</div>
 						</div>
 					</div>
@@ -421,120 +415,55 @@ include_once 'app/views/header.php';
 	</div>
 	<!--================ End Testimonial Area =================-->
 
-	<!--================ Srart Brand Area =================-->
-	<section class="brand_area section_gap">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="owl-carousel brand-carousel">
-						<!-- single-brand -->
-						<div class="single-brand-item d-table">
-							<div class="d-table-cell">
-								<img src="includes/img/brands/logo1.png" alt="">
-							</div>
-						</div>
-						<!-- single-brand -->
-						<div class="single-brand-item d-table">
-							<div class="d-table-cell">
-								<img src="includes/img/brands/logo2.png" alt="">
-							</div>
-						</div>
-						<!-- single-brand -->
-						<div class="single-brand-item d-table">
-							<div class="d-table-cell">
-								<img src="includes/img/brands/logo3.png" alt="">
-							</div>
-						</div>
-						<!-- single-brand -->
-						<div class="single-brand-item d-table">
-							<div class="d-table-cell">
-								<img src="includes/img/brands/logo4.png" alt="">
-							</div>
-						</div>
-						<!-- single-brand -->
-						<div class="single-brand-item d-table">
-							<div class="d-table-cell">
-								<img src="iincludes/mg/brands/logo5.png" alt="">
-							</div>
-						</div>
-						<!-- single-brand -->
-						<div class="single-brand-item d-table">
-							<div class="d-table-cell">
-								<img src="includes/img/brands/logo6.png" alt="">
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--================ End Brand Area =================-->
-
-	<!--================Impress Area =================-->
-	<section class="impress_area">
-		<div class="container">
-			<div class="impress_inner">
-				<h2>Got Impressed to our features?</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-				<a class="primary_btn" href="#"><span>Request Free Demo</span></a>
-			</div>
-		</div>
-	</section>
-	<!--================End Impress Area =================-->
-
 
 	<!--================Footer Area =================-->
-	<footer class="footer_area">
-		<div class="container">
-			<div class="row footer_inner">
-				<div class="col-lg-5 col-sm-6">
-					<aside class="f_widget ab_widget">
-						<div class="f_title">
-							<h3>About Me</h3>
-						</div>
-						<p>Do you want to be even more successful? Learn to love learning and growth. The more effort you put into
-							improving your skills,</p>
-						<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-					</aside>
-				</div>
-				<div class="col-lg-5 col-sm-6">
-					<aside class="f_widget news_widget">
-						<div class="f_title">
-							<h3>Newsletter</h3>
-						</div>
-						<p>Stay updated with our latest trends</p>
-						<div id="mc_embed_signup">
-							<form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
-							 method="get" class="subscribe_form relative">
-								<div class="input-group d-flex flex-row">
-									<input name="EMAIL" placeholder="Enter email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '"
-									 required="" type="email">
-									<button class="btn sub-btn"><span class="lnr lnr-arrow-right"></span></button>
-								</div>
-								<div class="mt-10 info"></div>
-							</form>
-						</div>
-					</aside>
-				</div>
-				<div class="col-lg-2">
-					<aside class="f_widget social_widget">
-						<div class="f_title">
-							<h3>Follow Me</h3>
-						</div>
-						<p>Let us be social</p>
-						<ul class="list">
-							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-							<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-							<li><a href="#"><i class="fa fa-behance"></i></a></li>
-						</ul>
-					</aside>
-				</div>
-			</div>
-		</div>
-	</footer>
+	<footer class="footer_area section_gap">
+            <div class="container">
+                <div class="row footer_inner">
+                    <div class="col-lg-5 col-sm-6">
+                        <aside class="f_widget ab_widget">
+                            <div class="f_title">
+                                <h3>A Propos</h3>
+                            </div>
+                            <p>Projet réalisé dans le cadre du Bachelor RPI<br>Promo Engelbart 2018 - 2019.</p>
+                            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> Tous droits réservés</p>
+                        </aside>
+                    </div>
+                    <div class="col-lg-5 col-sm-6">
+                        <aside class="f_widget news_widget">
+                            <div class="f_title">
+                                <h3>Newsletter</h3>
+                            </div>
+                            <p>Se tenir informé des nouveautés</p>
+                            <div id="mc_embed_signup">
+                                <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe_form relative">
+                                    <div class="input-group d-flex flex-row">
+                                        <input name="EMAIL" placeholder="Entrez votre adresse email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '" required="" type="email">
+                                        <button class="btn sub-btn"><span class="lnr lnr-arrow-right"></span></button>      
+                                    </div>              
+                                    <div class="mt-10 info"></div>
+                                </form>
+                            </div>
+                        </aside>
+                    </div>
+                    <div class="col-lg-2">
+                        <aside class="f_widget social_widget">
+                            <div class="f_title">
+                                <h3>Nous suivre</h3>
+                            </div>
+                            <p>Nos réseaux</p>
+                            <ul class="list">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                                <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                            </ul>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </footer>
 	<!--================End Footer Area =================-->
 
 	<!-- Optional JavaScript -->
