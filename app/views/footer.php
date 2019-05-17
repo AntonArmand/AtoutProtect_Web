@@ -7,12 +7,11 @@
                     <div class="col-lg-5 col-sm-6">
                         <aside class="f_widget ab_widget">
                             <div class="f_title">
-                                <h3>About Me</h3>
+                                <h3>A Propos</h3>
                             </div>
-                            <p>Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills,</p>
+                            <p>Projet réalisé dans le cadre du Bachelor RPI - promo Engelbart 2018 - 2019.</p>
                             <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> Tous droits réservés</p>
                         </aside>
                     </div>
                     <div class="col-lg-5 col-sm-6">

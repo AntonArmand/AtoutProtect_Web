@@ -72,7 +72,6 @@ include_once 'app/views/header.php';
 			<div class="row justify-content-center">
 				<div class="col-lg-8 text-center">
 					<div class="main_title">
-						<p class="top_title">La sécurité avant tous</p>
 						<h2>Leader dans la sécurisation des programmes</h2>
 						<p>Notre objectif est de vous fournir une solution de sécurité complète et fiable. Nous proposons trois gammes différentes de produit afin de répondre au mieux à votre besoin.</p>
 						<a href="#" class="primary_btn"><span>Découvrir nos offres!!</span></a>
@@ -90,7 +89,7 @@ include_once 'app/views/header.php';
 					<div class="single_feature">
 						<div class="feature_head">
 							<span class="lnr lnr-screen"></span>
-							<h4>Stunning Visuals</h4>
+							<h4>Utilisation simple</h4>
 						</div>
 						<div class="feature_content">
 							<p>Here, I focus on a range of items and features that we use in life without giving them a second thought such as Coca Cola.</p>
@@ -100,7 +99,7 @@ include_once 'app/views/header.php';
 					<div class="single_feature">
 						<div class="feature_head">
 							<span class="lnr lnr-screen"></span>
-							<h4>Stunning Visuals</h4>
+							<h4>Solution adaptative</h4>
 						</div>
 						<div class="feature_content">
 							<p>Here, I focus on a range of items and features that we use in life without giving them a second thought such as Coca Cola.</p>
@@ -110,7 +109,7 @@ include_once 'app/views/header.php';
 					<div class="single_feature">
 						<div class="feature_head">
 							<span class="lnr lnr-screen"></span>
-							<h4>Stunning Visuals</h4>
+							<h4></h4>
 						</div>
 						<div class="feature_content">
 							<p>Here, I focus on a range of items and features that we use in life without giving them a second thought such as Coca Cola.</p>
@@ -212,7 +211,6 @@ include_once 'app/views/header.php';
 			<div class="row justify-content-center">
 				<div class="col-lg-8 text-center">
 					<div class="main_title">
-						<p class="top_title">Features Specifications</p>
 						<h2>Amazing Features That make it Awesome!</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
 					</div>
@@ -267,9 +265,8 @@ include_once 'app/views/header.php';
 			<div class="row justify-content-center">
 				<div class="col-lg-8 text-center">
 					<div class="main_title">
-						<p class="top_title">Features Specifications</p>
-						<h2>Amazing Features That make it Awesome!</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+						<h2>Notre gamme de produits</h2>
+						<p>Choisissez la version la plus appropriée à vos besoins. Pour plus de question n'hésitez pas nous contacter afin que des experts puissent vous répondre.</p>
 					</div>
 				</div>
 			</div>
@@ -277,7 +274,7 @@ include_once 'app/views/header.php';
 				<div class="col-lg-4 col-md-6">
 					<div class="price_item">
 						<div class="price_head">
-							<h4>Real Basic</h4>
+							<h4>1 mois</h4>
 						</div>
 						<div class="price_body">
 							<ul class="list">
@@ -288,15 +285,15 @@ include_once 'app/views/header.php';
 							</ul>
 						</div>
 						<div class="price_footer">
-							<h3><span class="dlr">$</span> 39</h3>
-							<a class="primary_btn" href="#"><span>Get Started</span></a>
+							<h3>199<span class="dlr">€</span></h3>
+							<a class="primary_btn" href="#"><span>Acheter</span></a>
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6">
 					<div class="price_item">
 						<div class="price_head">
-							<h4>Real Standard</h4>
+							<h4>Illimité</h4>
 						</div>
 						<div class="price_body">
 							<ul class="list">
@@ -307,15 +304,15 @@ include_once 'app/views/header.php';
 							</ul>
 						</div>
 						<div class="price_footer">
-							<h3><span class="dlr">$</span> 69</h3>
-							<a class="primary_btn" href="#"><span>Get Started</span></a>
+							<h3>1499<span class="dlr">€</span></h3>
+							<a class="primary_btn" href="#"><span>Acheter</span></a>
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6">
 					<div class="price_item">
 						<div class="price_head">
-							<h4>Real Ultimate</h4>
+							<h4>6 mois</h4>
 						</div>
 						<div class="price_body">
 							<ul class="list">
@@ -326,8 +323,8 @@ include_once 'app/views/header.php';
 							</ul>
 						</div>
 						<div class="price_footer">
-							<h3><span class="dlr">$</span> 99</h3>
-							<a class="primary_btn" href="#"><span>Get Started</span></a>
+							<h3>699<span class="dlr">€</span></h3>
+							<a class="primary_btn" href="#"><span>Acheter</span></a>
 						</div>
 					</div>
 				</div>
@@ -342,7 +339,6 @@ include_once 'app/views/header.php';
 			<div class="row justify-content-center">
 				<div class="col-lg-8 text-center">
 					<div class="main_title">
-						<p class="top_title">User Feedback</p>
 						<h2>What Our Clients Say About Us</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
 					</div>
