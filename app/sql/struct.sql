@@ -31,8 +31,8 @@ USE `aprotect`;
 --
 
 CREATE TABLE `achat` (
-  `idAchat` int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
-  `dateAchat` date DEFAULT NULL,
+  `idAchat` int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  `dateAchat` date NOT NULL,
   `idClient` int(11) NOT NULL,
   `idPaypal` int(11) NOT NULL,
   `idAlloPass` int(11) NOT NULL,
@@ -47,8 +47,8 @@ CREATE TABLE `achat` (
 
 CREATE TABLE `activation` (
   `idActivation` int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
-  `statut` tinyint(4) DEFAULT NULL,
-  `biosNumber` varchar(45) DEFAULT NULL
+  `statut` tinyint(4) NOT NULL,
+  `biosNumber` varchar(45) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -69,10 +69,10 @@ CREATE TABLE `allopass` (
 
 CREATE TABLE `client` (
   `idClient` int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT  ,
-  `nomClient` varchar(45) DEFAULT NULL,
-  `prenomClient` varchar(45) DEFAULT NULL,
-  `mailClient` varchar(64) DEFAULT NULL,
-  `mdpClient` varchar(64) DEFAULT NULL,
+  `nomClient` varchar(45) NOT NULL,
+  `prenomClient` varchar(45) NOT NULL,
+  `mailClient` varchar(64) NOT NULL,
+  `mdpClient` varchar(64) NOT NULL,
   `dateInscriptionClient` date DEFAULT NULL,
   `dateModificationClient` date DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -85,8 +85,8 @@ CREATE TABLE `client` (
 
 CREATE TABLE `licence` (
   `codeLicence` int(11) PRIMARY KEY NOT NULL,
-  `dateAchat` date DEFAULT NULL,
-  `dateExpiration` date DEFAULT NULL,
+  `dateAchat` date NOT NULL,
+  `dateExpiration` date NOT NULL,
   `idActivation` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
