@@ -55,7 +55,6 @@ else if($save)
     $newMdpClientConfirm = isset($_POST['newMdpClientConfirm']) ? $_POST['newMdpClientConfirm'] : '';
     $mdpClient           = isset($_POST['mdpClient']) ? $_POST['mdpClient'] : '';
     $mailClient          = isset($_POST['mailClient']) ? $_POST['mailClient'] : '';
-    var_dump($nomClient);
     
     if($newMdpClient != $newMdpClientConfirm)
     {
