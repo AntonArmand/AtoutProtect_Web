@@ -1,5 +1,5 @@
 <?php
-include_once 'app/views/header.php';
+include_once 'header.php';
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -10,16 +10,16 @@ include_once 'app/views/header.php';
     <link rel="icon" href="includes/img/favicon.png" type="image/png">
     <title>Nexus SaaS</title>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="includes/css/bootstrap.css">
-    <link rel="stylesheet" href="includes/vendors/linericon/style.css">
-    <link rel="stylesheet" href="includes/css/font-awesome.min.css">
-    <link rel="stylesheet" href="includes/vendors/owl-carousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="includes/vendors/lightbox/simpleLightbox.css">
-    <link rel="stylesheet" href="includes/vendors/nice-select/css/nice-select.css">
-    <link rel="stylesheet" href="includes/vendors/animate-css/animate.css">
+    <link rel="stylesheet" href="../../includes/css/bootstrap.css">
+    <link rel="stylesheet" href="../../includes/vendors/linericon/style.css">
+    <link rel="stylesheet" href="../../includes/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../includes/vendors/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="../../includes/vendors/lightbox/simpleLightbox.css">
+    <link rel="stylesheet" href="../../includes/vendors/nice-select/css/nice-select.css">
+    <link rel="stylesheet" href="../../includes/vendors/animate-css/animate.css">
     <!-- main css -->
-    <link rel="stylesheet" href="includes/css/style.css">
-    <link rel="stylesheet" href="includes/css/responsive.css">
+    <link rel="stylesheet" href="../../includes/css/style.css">
+    <link rel="stylesheet" href="../../includes/css/responsive.css">
 </head>
 <body>
     <!--================Header Menu Area =================-->
@@ -132,33 +132,33 @@ include_once 'app/views/header.php';
 </div>
 <!--================End Contact Success and Error message Area =================-->
 <?php
-include_once 'app/views/footer.php';
+include_once 'footer.php';
 ?>        
 
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="includes/js/jquery-3.2.1.min.js"></script>
-<script src="includes/js/popper.js"></script>
-<script src="includes/js/bootstrap.min.js"></script>
-<script src="includes/js/stellar.js"></script>
-<script src="includes/js/jquery.magnific-popup.min.js"></script>
-<script src="includes/vendors/lightbox/simpleLightbox.min.js"></script>
-<script src="includes/vendors/nice-select/js/jquery.nice-select.min.js"></script>
-<script src="includes/vendors/isotope/imagesloaded.pkgd.min.js"></script>
-<script src="includes/vendors/isotope/isotope-min.js"></script>
-<script src="includes/vendors/owl-carousel/owl.carousel.min.js"></script>
-<script src="includes/js/jquery.ajaxchimp.min.js"></script>
-<script src="includes/js/mail-script.js"></script>
-<script src="includes/vendors/counter-up/jquery.waypoints.min.js"></script>
-<script src="includes/vendors/counter-up/jquery.counterup.min.js"></script>
+<script src="../../includes/js/jquery-3.2.1.min.js"></script>
+<script src="../../includes/js/popper.js"></script>
+<script src="../../includes/js/bootstrap.min.js"></script>
+<script src="../../includes/js/stellar.js"></script>
+<script src="../../includes/js/jquery.magnific-popup.min.js"></script>
+<script src="../../includes/vendors/lightbox/simpleLightbox.min.js"></script>
+<script src="../../includes/vendors/nice-select/js/jquery.nice-select.min.js"></script>
+<script src="../../includes/vendors/isotope/imagesloaded.pkgd.min.js"></script>
+<script src="../../includes/vendors/isotope/isotope-min.js"></script>
+<script src="../../includes/vendors/owl-carousel/owl.carousel.min.js"></script>
+<script src="../../includes/js/jquery.ajaxchimp.min.js"></script>
+<script src="../../includes/js/mail-script.js"></script>
+<script src="../../includes/vendors/counter-up/jquery.waypoints.min.js"></script>
+<script src="../../includes/vendors/counter-up/jquery.counterup.min.js"></script>
 <!-- contact js -->
-<script src="includes/js/jquery.form.js"></script>
-<script src="includes/js/jquery.validate.min.js"></script>
-<script src="includes/js/contact.js"></script>
+<script src="../../includes/js/jquery.form.js"></script>
+<script src="../../includes/js/jquery.validate.min.js"></script>
+<script src="../../includes/js/contact.js"></script>
 <!--gmaps Js-->
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
-<script src="includes/js/gmaps.min.js"></script>
-<script src="includes/js/theme.js"></script>
+<script src="../../includes/js/gmaps.min.js"></script>
+<script src="../../includes/js/theme.js"></script>
 </body>
 </html>
