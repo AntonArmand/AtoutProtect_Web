@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 ?>
 <header class="header_area">
 		<div class="main_menu">
@@ -23,7 +23,15 @@
 							<li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
-							<li class="nav-item"><a href="login.php" class="primary_btn text-uppercase">Se connecter</a></li>
+							
+							<?php if (isset ($_SESSION['idClient']) >0): ?>
+								<li class="nav-item"><a href="login.php" class="primary_btn text-uppercase">Se connecter</a
+								></li>
+							<?php else: ?>
+								<li class="nav-item"><a href="profil.php" class="primary_btn text-uppercase">Mon compte</a></li>
+							<?php endif; ?>
+
+							<li>
 						</ul>
 					</div>
 				</div>

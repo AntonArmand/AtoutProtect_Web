@@ -9,8 +9,6 @@ $login       = isset($_POST['login']) ? $_POST['login'] : '';
 
 $date       = new DateTime();
 $date       = $date->format('Y-m-d H:i:s');
-session_start();
-
 
 if($register != false)
 {
