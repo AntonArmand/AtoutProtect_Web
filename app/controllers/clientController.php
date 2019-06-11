@@ -12,7 +12,7 @@ $date       = $date->format('Y-m-d H:i:s');
 session_start();
 
 
-if($register)
+if($register != false)
 {
     $mailClient    = isset($_POST['mailClient']) ? $_POST['mailClient'] : '';
     $mdpClient     = isset($_POST['mdpClient']) ? $_POST['mdpClient'] : '';
@@ -92,7 +92,7 @@ else if($login)
     $mdpClient  = isset($_POST['mdpClient']) ? $_POST['mdpClient'] : '';
 
     $clientDAO  = new ClientDAO();
-    $client     = $clientDAO->findByEmail($mailClient, $mdpClient);
+    $client     = $clientDAO->findByEmail($mailClient, hashage($mdpClient));
     if($client->getIdClient() < 1)
     {
         echo('Mot de passe incorect');

@@ -77,7 +77,7 @@ include_once '../controllers/clientController.php';
               </div>
             </div>
             <div class="col-md-12 text-right">
-                <input class="primary_btn" type="submit" requiered name="register" value="Se connecter"><br />
+                <input class="primary_btn" type="submit" requiered name="login" value="Se connecter"><br />
             </div>
           </form>
           <!-- REGISTER FORM -->
