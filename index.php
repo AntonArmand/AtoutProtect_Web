@@ -73,7 +73,7 @@ include_once 'app/views/header.php';
 					<div class="main_title">
 						<h2>Leader dans la sécurisation des programmes</h2>
 						<p>Notre objectif est de vous fournir une solution de sécurité complète et fiable. Nous proposons trois gammes différentes de produit afin de répondre au mieux à votre besoin.</p>
-						<a href="#" class="primary_btn"><span>Découvrir nos offres!!</span></a>
+						<a href="#" class="primary_btn"><span>Découvrir nos offres !!</span></a>
 					</div>
 				</div>
 			</div>
@@ -454,7 +454,7 @@ include_once 'app/views/header.php';
 						<!-- single-brand -->
 						<div class="single-brand-item d-table">
 							<div class="d-table-cell">
-								<img src="iincludes/mg/brands/logo5.png" alt="">
+								<img src="includes/img/brands/logo5.png" alt="">
 							</div>
 						</div>
 						<!-- single-brand -->
