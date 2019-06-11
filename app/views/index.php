@@ -56,11 +56,8 @@ include_once 'header.php';
 					</div>
 					<div class="col-lg-7">
 						<div class="home_right_img">
-<<<<<<< HEAD:app/views/index.php
 							<img class="img-fluid" src="../../includes/img/banner/home-right.png" alt="">
-=======
 							<img class="img-fluid" src="includes/img/banner/home-right.png" alt="">
->>>>>>> 27e93d56fce3471654f40b4421a4f942f51e2546:index.php
 						</div>
 					</div>
 				</div>
