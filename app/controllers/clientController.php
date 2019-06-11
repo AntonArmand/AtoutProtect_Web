@@ -49,10 +49,13 @@ if($register)
 
 else if($save)
 {    
+    $nomClient           = isset($_POST['nomClient']) ? $_POST['nomClient'] : '';
+    $prenomClient        = isset($_POST['prenomClient']) ? $_POST['prenomClient'] : '';
     $newMdpClient        = isset($_POST['newMdpClient']) ? $_POST['newMdpClient'] : '';
     $newMdpClientConfirm = isset($_POST['newMdpClientConfirm']) ? $_POST['newMdpClientConfirm'] : '';
     $mdpClient           = isset($_POST['mdpClient']) ? $_POST['mdpClient'] : '';
     $mailClient          = isset($_POST['mailClient']) ? $_POST['mailClient'] : '';
+    var_dump($nomClient);
     
     if($newMdpClient != $newMdpClientConfirm)
     {
@@ -61,12 +64,20 @@ else if($save)
     else
     {
         $clientDAO = new ClientDAO();
-        $_SESSION['idClient'] = 6;
+        $_SESSION['idClient'] = 2;
         $client = $clientDAO->findByIdClient($_SESSION['idClient']);
         if($client->getMdpClient() == hashage($mdpClient))
         {
-            $clientDAO->updateClient($client->getIdClient(), $client->getNomClient(), 
-                $client->getPrenomClient(), $client->getMailClient(), hashage($newMdpClient));
+            $clientDAO->updateClient($client->getIdClient(), $nomClient, 
+                $prenomClient, $mailClient, hashage($newMdpClient));
+            $client = $clientDAO->findByIdClient($_SESSION['idClient']);
+            $_SESSION['idClient'] = $client->getIdClient();
+            $_SESSION['nomClient'] = $client->getNomClient();
+            $_SESSION['prenomClient'] = $client->getPrenomClient();
+            $_SESSION['mailClient'] = $client->getMailClient();
+            $_SESSION['dateInscriptionClient'] = $client->getDateInscriptionClient();
+            $_SESSION['dateModificationClient'] = $client->getDateModificationClient();
+
         }
         else
         {

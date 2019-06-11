@@ -230,9 +230,9 @@ include_once 'app/views/header.php';
 					</div>
 				</div>
 				<div class="border-line"></div>
-				<img class="shape1"src="img/shape1.png" alt="">		
-				<img class="shape2"src="img/shape2.png" alt="">		
-				<img class="shape3"src="img/shape1.png" alt="">		
+				<img class="shape1"src="includes/img/shape1.png" alt="">		
+				<img class="shape2"src="includes/img/shape2.png" alt="">		
+				<img class="shape3"src="includes/img/shape1.png" alt="">		
 			</div>
 
 			<div class="row features_content bottom-features">
