@@ -56,7 +56,7 @@ include_once 'app/views/header.php';
 					</div>
 					<div class="col-lg-7">
 						<div class="home_right_img">
-							<img class="img-fluid" src="img/banner/home-right.png" alt="">
+							<img class="img-fluid" src="includes/img/banner/home-right.png" alt="">
 						</div>
 					</div>
 				</div>
@@ -128,21 +128,21 @@ include_once 'app/views/header.php';
 					<li class="nav-item">
 						<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
 							<span class="lnr lnr-screen"></span>
-							<h6>Design Trends</h6>
+							<h6>Essai gratuit</h6>
 						</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
 						 aria-selected="false">
 						 <span class="lnr lnr-screen"></span>
-						 <h6>Development</h6>
+						 <h6>Besoin de conseils</h6>
 						</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
 						 aria-selected="false">
 						 <span class="lnr lnr-screen"></span>
-						 <h6>Delivery</h6>
+						 <h6>Assistance 24/7</h6>
 						</a>
 					</li>
 				</ul>
@@ -151,10 +151,10 @@ include_once 'app/views/header.php';
 						<div class="row recent_update_text align-items-center">
 							<div class="col-lg-5">
 								<div class="common_style">
-									<p class="line">Modern Daesign Trends</p>
-									<h3>We Believe that <br /> Inner beauty Lasts Long</h3>
-									<p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial that as women.</p>
-									<a class="primary_btn" href="#"><span>Learn More</span></a>
+									<p class="line">Essai gratuit de 30 jours</p>
+									<h3>30 jours offerts</h3>
+									<p>Contacter notre équipe pour demander votre essai gratuit de 30 afin de pouvoir tester les fonctionnalitées du programme.</p>
+									<a class="primary_btn" href="contact.php>"><span>En savoir plus</span></a>
 								</div>
 							</div>
 							<div class="col-lg-6">
@@ -168,10 +168,10 @@ include_once 'app/views/header.php';
 						<div class="row recent_update_text align-items-center">
 							<div class="col-lg-5">
 								<div class="common_style">
-									<p class="line">Modern Daesign Trends</p>
-									<h3>We Believe that <br /> Inner beauty Lasts Long</h3>
-									<p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial that as women.</p>
-									<a class="primary_btn" href="#"><span>Learn More</span></a>
+									<p class="line">Nous contacter</p>
+									<h3>Notre équipe est à votre équoute</h3>
+									<p>Notre équipe d'expert est présente pour vous conseillez et vous aidez à choisir la solution adaptée a vos besoins.</p>
+									<a class="primary_btn" href="#"><span>En savoir plus</span></a>
 								</div>
 							</div>
 							<div class="col-lg-6">
@@ -185,10 +185,10 @@ include_once 'app/views/header.php';
 						<div class="row recent_update_text align-items-center">
 							<div class="col-lg-5">
 								<div class="common_style">
-									<p class="line">Modern Daesign Trends</p>
-									<h3>We Believe that <br /> Inner beauty Lasts Long</h3>
-									<p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial that as women.</p>
-									<a class="primary_btn" href="#"><span>Learn More</span></a>
+									<p class="line">En cas de problèmes</p>
+									<h3>Nous sommes la pour vous aidez</h3>
+									<p>Nos équipes techniques sont la pour vous aidez à mettre en place votre solution dan votre environnement.</p>
+									<a class="primary_btn" href="#"><span>En savoir plus</span></a>
 								</div>
 							</div>
 							<div class="col-lg-6 text-right">
@@ -210,8 +210,8 @@ include_once 'app/views/header.php';
 			<div class="row justify-content-center">
 				<div class="col-lg-8 text-center">
 					<div class="main_title">
-						<h2>Amazing Features That make it Awesome!</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+						<h2>Ce qui nous font confiances!</h2>
+						<p>Nos partenaires les plus fidèles nous ont fait confiance.</p>
 					</div>
 				</div>
 			</div>
@@ -223,25 +223,25 @@ include_once 'app/views/header.php';
 				</div>
 				<div class="col-lg-4 offset-lg-2">
 					<div class="common_style">
-						<p class="line">Modern Daesign Trends</p>
-						<h3>We Believe that <br /> Inner beauty Lasts Long</h3>
-						<p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial that as women.</p>
-						<a class="primary_btn" href="#"><span>Learn More</span></a>
+						<p class="line">Electronic Arts</p>
+						<h3>AtoutProtect est la solution inovente</h3>
+						<p>AtoutProtect nous a permit de nous sécuriser contre le téléchargement illégal grace à leur algorithme unique au monde/</p>
+						<a class="primary_btn" href="#"><span>En savoir plus</span></a>
 					</div>
 				</div>
 				<div class="border-line"></div>
-				<img class="shape1"src="img/shape1.png" alt="">		
-				<img class="shape2"src="img/shape2.png" alt="">		
-				<img class="shape3"src="img/shape1.png" alt="">		
+				<img class="shape1"src="includes/img/shape1.png" alt="">		
+				<img class="shape2"src="includes/img/shape2.png" alt="">		
+				<img class="shape3"src="includes/img/shape1.png" alt="">		
 			</div>
 
 			<div class="row features_content bottom-features">
 				<div class="col-lg-5">
 					<div class="common_style">
-						<p class="line">Modern Daesign Trends</p>
-						<h3>We Believe that <br /> Inner beauty Lasts Long</h3>
-						<p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial that as women.</p>
-						<a class="primary_btn" href="#"><span>Learn More</span></a>
+						<p class="line">Ubisoft</p>
+						<h3>AtoutProtect rivalise la concurence</h3>
+						<p>AtoutProtect est loin devant la concurence en proposant une solution sécurisée à un coup très raisonnable.</p>
+						<a class="primary_btn" href="#"><span>En savoir plus</span></a>
 					</div>
 				</div>
 				<div class="col-lg-5 offset-lg-2">
