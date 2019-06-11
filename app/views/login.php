@@ -9,7 +9,7 @@ include_once '../controllers/clientController.php';
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="icon" href="includes/img/favicon.png" type="image/png">
-  <title>Conexion - Inscription</title>
+  <title>Connexion - Inscription</title>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="../../includes/css/bootstrap.css">
   <link rel="stylesheet" href="../../includes/vendors/linericon/style.css">
@@ -77,7 +77,7 @@ include_once '../controllers/clientController.php';
               </div>
             </div>
             <div class="col-md-12 text-right">
-                <input class="primary_btn" requiered name="register" value="Se connecter"><br />
+                <input class="primary_btn" type="submit" requiered name="register" value="Se connecter"><br />
             </div>
           </form>
           <!-- REGISTER FORM -->
@@ -97,7 +97,7 @@ include_once '../controllers/clientController.php';
               </div>
             </div>
             <div class="col-md-12 text-right">
-                <input class="primary_btn" requiered name="register" value="S'inscire"><br />
+                <input class="primary_btn" type="submit" requiered name="register" value="S'inscire"><br />
             </div>
           </form>
         </div>

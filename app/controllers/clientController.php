@@ -19,9 +19,6 @@ if($register)
     $nomClient     = isset($_POST['nomClient']) ? $_POST['nomClient'] : '';
     $prenomClient  = isset($_POST['prenomClient']) ? $_POST['prenomClient'] : '';
 
-
-
-
     $array = array("nomClient" => $nomClient,
                         "prenomClient" => $prenomClient,
                         "mailClient" => $mailClient,
@@ -48,7 +45,6 @@ if($register)
 
         header('Location: ../../index.php');
     }
-
 }
 
 else if($save)
@@ -56,8 +52,7 @@ else if($save)
     $newMdpClient        = isset($_POST['newMdpClient']) ? $_POST['newMdpClient'] : '';
     $newMdpClientConfirm = isset($_POST['newMdpClientConfirm']) ? $_POST['newMdpClientConfirm'] : '';
     $mdpClient           = isset($_POST['mdpClient']) ? $_POST['mdpClient'] : '';
-
-    $mailClient = isset($_POST['mailClient']) ? $_POST['mailClient'] : '';
+    $mailClient          = isset($_POST['mailClient']) ? $_POST['mailClient'] : '';
     
     if($newMdpClient != $newMdpClientConfirm)
     {
@@ -66,9 +61,18 @@ else if($save)
     else
     {
         $clientDAO = new ClientDAO();
+        $_SESSION['idClient'] = 6;
         $client = $clientDAO->findByIdClient($_SESSION['idClient']);
-        $clientDAO = new ClientDAO();
-        $clientDAO->updateClient($client->getIdClient(), $client->getNomClient(), $client->getPrenomClient(), $client->getMailClient(), $newMdpClient, $newMdpClientConfirm);
+        if($client->getMdpClient() == hashage($mdpClient))
+        {
+            $clientDAO->updateClient($client->getIdClient(), $client->getNomClient(), 
+                $client->getPrenomClient(), $client->getMailClient(), hashage($newMdpClient));
+        }
+        else
+        {
+            echo "Mot de passe incorrect";
+        }
+
     }
 }
 
