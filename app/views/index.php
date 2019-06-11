@@ -5,25 +5,25 @@
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="icon" href="includes/img/favicon.png" type="image/png">
+	<link rel="icon" href="../../includes/img/favicon.png" type="image/png">
 	<title>Atout Protect</title>
 	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="includes/css/bootstrap.css">
-	<link rel="stylesheet" href="includes/vendors/linericon/style.css">
-	<link rel="stylesheet" href="includes/css/font-awesome.min.css">
-	<link rel="stylesheet" href="includes/vendors/owl-carousel/owl.carousel.min.css">
-	<link rel="stylesheet" href="includes/css/magnific-popup.css">
-	<link rel="stylesheet" href="includes/vendors/nice-select/css/nice-select.css">
-	<link rel="stylesheet" href="includes/vendors/animate-css/animate.css">
-	<link rel="stylesheet" href="includes/vendors/flaticon/flaticon.css">
+	<link rel="stylesheet" href="../../includes/css/bootstrap.css">
+	<link rel="stylesheet" href="../../includes/vendors/linericon/style.css">
+	<link rel="stylesheet" href="../../includes/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../../includes/vendors/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="../../includes/css/magnific-popup.css">
+	<link rel="stylesheet" href="../../includes/vendors/nice-select/css/nice-select.css">
+	<link rel="stylesheet" href="../../includes/vendors/animate-css/animate.css">
+	<link rel="stylesheet" href="../../includes/vendors/flaticon/flaticon.css">
 	<!-- main css -->
-	<link rel="stylesheet" href="includes/css/style.css">
+	<link rel="stylesheet" href="../../includes/css/style.css">
 </head>
 
 <body>
 
 <?php
-include_once 'app/views/header.php';
+include_once 'header.php';
 ?>
 
 	<!--================Header Menu Area =================-->
@@ -56,7 +56,7 @@ include_once 'app/views/header.php';
 					</div>
 					<div class="col-lg-7">
 						<div class="home_right_img">
-							<img class="img-fluid" src="img/banner/home-right.png" alt="">
+							<img class="img-fluid" src="../../includes/img/banner/home-right.png" alt="">
 						</div>
 					</div>
 				</div>
@@ -80,7 +80,7 @@ include_once 'app/views/header.php';
 			<div class="row align-items-center">
 				<div class="col-lg-6">
 					<div class="left_features">
-						<img class="img-fluid" src="includes/img/mainFormApp.JPG" alt="">
+						<img class="img-fluid" src="../../includes/img/mainFormApp.JPG" alt="">
 					</div>
 				</div>
 				<div class="col-lg-5 offset-lg-1">
@@ -159,7 +159,7 @@ include_once 'app/views/header.php';
 							</div>
 							<div class="col-lg-6">
 								<div class="chart_img">
-									<img class="img-fluid" src="includes/img/chart.png" alt="">
+									<img class="img-fluid" src="../../includes/img/chart.png" alt="">
 								</div>
 							</div>
 						</div>
@@ -176,7 +176,7 @@ include_once 'app/views/header.php';
 							</div>
 							<div class="col-lg-6">
 								<div class="chart_img">
-									<img class="img-fluid" src="includes/img/chart.png" alt="">
+									<img class="img-fluid" src="../../includes/img/chart.png" alt="">
 								</div>
 							</div>
 						</div>
@@ -193,7 +193,7 @@ include_once 'app/views/header.php';
 							</div>
 							<div class="col-lg-6 text-right">
 								<div class="chart_img">
-									<img class="img-fluid" src="includes/img/chart.png" alt="">
+									<img class="img-fluid" src="../../includes/img/chart.png" alt="">
 								</div>
 							</div>
 						</div>
@@ -218,7 +218,7 @@ include_once 'app/views/header.php';
 			<div class="row features_content">
 				<div class="col-lg-4 offset-lg-1">
 					<div class="big_f_left">
-						<img class="img-fluid" src="includes/img/f-img1.png" alt="">
+						<img class="img-fluid" src="../../includes/img/f-img1.png" alt="">
 					</div>
 				</div>
 				<div class="col-lg-4 offset-lg-2">
@@ -230,9 +230,9 @@ include_once 'app/views/header.php';
 					</div>
 				</div>
 				<div class="border-line"></div>
-				<img class="shape1"src="includes/img/shape1.png" alt="">		
-				<img class="shape2"src="includes/img/shape2.png" alt="">		
-				<img class="shape3"src="includes/img/shape1.png" alt="">		
+				<img class="shape1"src="../../includes/img/shape1.png" alt="">		
+				<img class="shape2"src="../../includes/img/shape2.png" alt="">		
+				<img class="shape3"src="../../includes/img/shape1.png" alt="">		
 			</div>
 
 			<div class="row features_content bottom-features">
@@ -246,13 +246,13 @@ include_once 'app/views/header.php';
 				</div>
 				<div class="col-lg-5 offset-lg-2">
 					<div class="big_f_left">
-						<img class="img-fluid" src="includes/img/f-img2.png" alt="">
+						<img class="img-fluid" src="../../includes/img/f-img2.png" alt="">
 					</div>
 				</div>
 				<div class="border-line"></div>
-				<img class="shape1"src="includes/img/shape1.png" alt="">		
-				<img class="shape2"src="includes/img/shape2.png" alt="">		
-				<img class="shape3"src="includes/img/shape1.png" alt="">		
+				<img class="shape1"src="../../includes/img/shape1.png" alt="">		
+				<img class="shape2"src="../../includes/img/shape2.png" alt="">		
+				<img class="shape3"src="../../includes/img/shape1.png" alt="">		
 			</div>
 		</div>
 	</section>
@@ -345,7 +345,7 @@ include_once 'app/views/header.php';
 						<!-- single testimonial -->
 						<div class="single_testimonial">
 							<div class="testimonial_head">
-								<img src="includes/img/quote.png" alt="">
+								<img src="../../includes/img/quote.png" alt="">
 								<h4>Bristan Chell</h4>
 								<div class="review">
 									<i class="fa fa-star"></i>
@@ -361,7 +361,7 @@ include_once 'app/views/header.php';
 
 						<div class="single_testimonial">
 							<div class="testimonial_head">
-								<img src="includes/img/quote.png" alt="">
+								<img src="../../includes/img/quote.png" alt="">
 								<h4>Hella Alexeeva</h4>
 								<div class="review">
 									<i class="fa fa-star"></i>
@@ -378,7 +378,7 @@ include_once 'app/views/header.php';
 
 						<div class="single_testimonial">
 							<div class="testimonial_head">
-								<img src="includes/img/quote.png" alt="">
+								<img src="../../includes/img/quote.png" alt="">
 								<h4>Joseph Gorshkov</h4>
 								<div class="review">
 									<i class="fa fa-star"></i>
@@ -394,7 +394,7 @@ include_once 'app/views/header.php';
 
 						<div class="single_testimonial">
 							<div class="testimonial_head">
-								<img src="includes/img/quote.png" alt="">
+								<img src="../../includes/img/quote.png" alt="">
 								<h4>Veronica Avdeeva</h4>
 								<div class="review">
 									<i class="fa fa-star"></i>
@@ -468,23 +468,23 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> Tous 
 
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="includes/js/jquery-3.2.1.min.js"></script>
-	<script src="includes/js/popper.js"></script>
-	<script src="includes/js/bootstrap.min.js"></script>
-	<script src="includes/js/stellar.js"></script>
-	<script src="includes/js/jquery.magnific-popup.min.js"></script>
-	<script src="includes/vendors/nice-select/js/jquery.nice-select.min.js"></script>
-	<script src="includes/vendors/isotope/imagesloaded.pkgd.min.js"></script>
-	<script src="includes/vendors/isotope/isotope-min.js"></script>
-	<script src="includes/vendors/owl-carousel/owl.carousel.min.js"></script>
-	<script src="includes/js/jquery.ajaxchimp.min.js"></script>
-	<script src="includes/vendors/counter-up/jquery.waypoints.min.js"></script>
-	<script src="includes/vendors/counter-up/jquery.counterup.min.js"></script>
-	<script src="includes/js/mail-script.js"></script>
+	<script src="../../includes/js/jquery-3.2.1.min.js"></script>
+	<script src="../../includes/js/popper.js"></script>
+	<script src="../../includes/js/bootstrap.min.js"></script>
+	<script src="../../includes/js/stellar.js"></script>
+	<script src="../../includes/js/jquery.magnific-popup.min.js"></script>
+	<script src="../../includes/vendors/nice-select/js/jquery.nice-select.min.js"></script>
+	<script src="../../includes/vendors/isotope/imagesloaded.pkgd.min.js"></script>
+	<script src="../../includes/vendors/isotope/isotope-min.js"></script>
+	<script src="../../includes/vendors/owl-carousel/owl.carousel.min.js"></script>
+	<script src="../../includes/js/jquery.ajaxchimp.min.js"></script>
+	<script src="../../includes/vendors/counter-up/jquery.waypoints.min.js"></script>
+	<script src="../../includes/vendors/counter-up/jquery.counterup.min.js"></script>
+	<script src="../../includes/js/mail-script.js"></script>
 	<!--gmaps Js-->
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
-	<script src="includes/js/gmaps.min.js"></script>
-	<script src="includes/js/theme.js"></script>
+	<script src="../../includes/js/gmaps.min.js"></script>
+	<script src="../../includes/js/theme.js"></script>
 </body>
 
 </html>
