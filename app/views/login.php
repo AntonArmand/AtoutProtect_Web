@@ -11,6 +11,7 @@ include_once '../controllers/clientController.php';
   <link rel="icon" href="includes/img/favicon.png" type="image/png">
   <title>Connexion - Inscription</title>
   <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="../../includes/css/custom.css">
   <link rel="stylesheet" href="../../includes/css/bootstrap.css">
   <link rel="stylesheet" href="../../includes/vendors/linericon/style.css">
   <link rel="stylesheet" href="../../includes/css/font-awesome.min.css">
@@ -50,13 +51,13 @@ include_once '../controllers/clientController.php';
           <div class="contact_info">
             <div class="info_item">
               <i class="lnr lnr-home"></i>
-              <h6>AtoutProtect, </br>56 avenue de Jean</h6>
-              <p>31000 - Toulouse, </br> France</p>
+              <h6>AtoutProtect, <br> 56 Avenue Jean</h6>
+              <p>31000 - Toulouse<br> France</p>
             </div>
             <div class="info_item">
               <i class="lnr lnr-phone-handset"></i>
               <h6><a href="#">+33 (0)5 41 41 00 00</a></h6>
-              <p>Lun au Ven 7h to 19h</p>
+              <p>Lun au Ven 7h à 19h</p>
             </div>
             <div class="info_item">
               <i class="lnr lnr-envelope"></i>
@@ -76,15 +77,10 @@ include_once '../controllers/clientController.php';
                 <input class="form-control" type="password" required name="mdpClient"placeholder="Entrez votre mot de passe"/>
               </div>
             </div>
-            <div class="col-md-12 text-right">
-                <input class="primary_btn" type="submit" requiered name="login" value="Se connecter"><br />
+            <div class="col-md-12">
+                <input id="buttonSubmit" class="primary_btn" type="submit" requiered name="login" value="Se connecter"><br />
             </div>
           </form>
-
-          </br>
-          <hr> 
-          </br>
-
           <!-- REGISTER FORM -->
           <form class="row contact_form"action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
             <div class="col-md-6">
@@ -101,8 +97,8 @@ include_once '../controllers/clientController.php';
                 <input class="form-control" type="password" required name="mdpClient"placeholder="Entrez votre mot de passe"/>
               </div>
             </div>
-            <div class="col-md-12 text-right">
-                <input class="primary_btn" type="submit" requiered name="register" value="S'inscire"><br />
+            <div class="col-md-12">
+                <input id="buttonSubmit" class="primary_btn" type="submit" requiered name="register" value="S'inscire"><br />
             </div>
           </form>
         </div>
@@ -135,8 +131,8 @@ include_once '../controllers/clientController.php';
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <i class="fa fa-close"></i>
           </button>
-          <h2>Desolé !</h2>
-          <p> Une erreur est survenue ! </p>
+          <h2>Désolé !</h2>
+          <p> Une erreur est survenue </p>
         </div>
       </div>
     </div>

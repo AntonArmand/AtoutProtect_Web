@@ -34,7 +34,7 @@ include_once 'header.php';
                         <a href="index.php">Home</a>
                         <a href="contact.php">Contact</a>
                     </div>
-                    <h2>Contact Us</h2>
+                    <h2>Nous contacter</h2>
                 </div>
             </div>
         </div>
@@ -57,13 +57,13 @@ include_once 'header.php';
                 <div class="contact_info">
                     <div class="info_item">
                         <i class="lnr lnr-home"></i>
-                        <h6>AtoutProtect, </br>56 avenue de Jean</h6>
-                        <p>31000 - Toulouse, </br> France</p>
+                        <h6>AtoutProtect, <br> 56 Avenue Jean</h6>
+                        <p>31000 - Toulouse <br> France</p>
                     </div>
                     <div class="info_item">
                         <i class="lnr lnr-phone-handset"></i>
                         <h6><a href="#">+33 (0)5 41 41 00 00</a></h6>
-                        <p>Lun au Ven 7h to 19h</p>
+                        <p>Lun au Ven 7h à 19h</p>
                     </div>
                     <div class="info_item">
                         <i class="lnr lnr-envelope"></i>
@@ -76,22 +76,22 @@ include_once 'header.php';
                 <form class="row contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <input type="text" class="form-control" id="name" name="name" placeholder="Votre nom">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control" id="email" name="email" placeholder="Votre e-mail">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter email address">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" id="subject" name="subject" placeholder="L'objet">
+                            <input type="text" class="form-control" id="subject" name="subject" placeholder="Enter Subject">
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
-                            <textarea class="form-control" name="message" id="message" rows="1" placeholder="Votre message"></textarea>
+                            <textarea class="form-control" name="message" id="message" rows="1" placeholder="Enter Message"></textarea>
                         </div>
                     </div>
                     <div class="col-md-12 text-right">
-                        <button type="submit" value="submit" class="primary_btn"><span>Envoyer votre message</span></button>
+                        <button type="submit" value="submit" class="primary_btn"><span>Send Message</span></button>
                     </div>
                 </form>
             </div>
@@ -108,8 +108,8 @@ include_once 'header.php';
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <i class="fa fa-close"></i>
                 </button>
-                <h2>Merci</h2>
-                <p>Votre message a été envoyé...</p>
+                <h2>Thank you</h2>
+                <p>Your message is successfully sent...</p>
             </div>
         </div>
     </div>
@@ -124,8 +124,8 @@ include_once 'header.php';
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <i class="fa fa-close"></i>
                 </button>
-                <h2>Desolé !</h2>
-                <p> Une erreur est survenue ! </p>
+                <h2>Sorry !</h2>
+                <p> Something went wrong </p>
             </div>
         </div>
     </div>

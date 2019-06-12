@@ -1,4 +1,6 @@
-<?php session_start(); ?>
+<?php
+session_start();
+?>
 <header class="header_area">
 		<div class="main_menu">
 			<nav class="navbar navbar-expand-lg navbar-light">
@@ -16,19 +18,19 @@
 						<ul class="nav navbar-nav menu_nav justify-content-center">
 							<li class="nav-item active"><a class="nav-link" href="index.php">Accueil</a></li>
 							<li class="nav-item"><a class="nav-link" href="index.php#features">Features</a></li>
-							<li class="nav-item"><a class="nav-link" href="index.php#licence">Licences</a></li>
+							<li class="nav-item"><a class="nav-link" href="index.php#licence">Licence</a></li>
 							<li class="nav-item"><a class="nav-link" href="index.php#about-us">Qui somme nous ?</a></li>
 							<li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
+							<li class="nav-item"><a class="nav-link" href="logout.php">Deconnexion</a></li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
-							
-							<?php if (isset ($_SESSION['idClient']) == 0): ?>
-								<li class="nav-item"><a href="login.php" class="primary_btn text-uppercase">Se connecter</a
+							<?php if (isset ($_SESSION['idClient']) > 0): ?>
+								<li class="nav-item"><a href="profil.php" class="primary_btn text-uppercase">Mon compte</a
 								></li>
 							<?php else: ?>
-								<li class="nav-item"><a href="profil.php" class="primary_btn text-uppercase">Mon compte</a></li>
-								<li class="nav-item"><a href="logout.php" class="primary_btn text-uppercase">Se deconnecter</a></li>
+								<li class="nav-item"><a href="login.php" class="primary_btn text-uppercase">Connexion</a></li>
 							<?php endif; ?>
+
 							<li>
 						</ul>
 					</div>
