@@ -50,18 +50,18 @@ include_once '../controllers/clientController.php';
           <div class="contact_info">
             <div class="info_item">
               <i class="lnr lnr-home"></i>
-              <h6>California, United States</h6>
-              <p>Santa monica bullevard</p>
+              <h6>AtoutProtect, <br> 56 Avenue Jean</h6>
+              <p>31000 - Toulouse<br> France</p>
             </div>
             <div class="info_item">
               <i class="lnr lnr-phone-handset"></i>
-              <h6><a href="#">00 (440) 9865 562</a></h6>
-              <p>Mon to Fri 9am to 6 pm</p>
+              <h6><a href="#">+33 (0)5 41 41 00 00</a></h6>
+              <p>Lun au Ven 7h à 19h</p>
             </div>
             <div class="info_item">
               <i class="lnr lnr-envelope"></i>
-              <h6><a href="#">support@colorlib.com</a></h6>
-              <p>Send us your query anytime!</p>
+              <h6><a href="#">support@atoutprotect.com</a></h6>
+              <p>Nous sommes la pour vous!</p>
             </div>
           </div>
         </div>
@@ -88,8 +88,8 @@ include_once '../controllers/clientController.php';
                 <input class="form-control" type="password" required name="newMdpClientConfirm" placeholder="Confirmez votre nouveau mot de passe"/>
               </div>
             </div>
-            <div class="col-md-12 text-right">
-                <input class="primary_btn" type="submit" requiered name="save" value="Enregistrer"><br />
+            <div class="col-md-12">
+                <input id="buttonSubmit" class="primary_btn" type="submit" requiered name="save" value="Enregistrer"><br />
             </div>
           </form>
         </div>
@@ -106,8 +106,8 @@ include_once '../controllers/clientController.php';
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <i class="fa fa-close"></i>
           </button>
-          <h2>Thank you</h2>
-          <p>Your message is successfully sent...</p>
+          <h2>Merci</h2>
+          <p>Votre message a été envoyé...</p>
         </div>
       </div>
     </div>
@@ -122,8 +122,8 @@ include_once '../controllers/clientController.php';
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <i class="fa fa-close"></i>
           </button>
-          <h2>Sorry !</h2>
-          <p> Something went wrong </p>
+          <h2>Desolé !</h2>
+          <p> Une erreur est survenue </p>
         </div>
       </div>
     </div>
