@@ -76,22 +76,22 @@ include_once 'header.php';
                 <form class="row contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Votre nom">
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter email address">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Votre adresse e-mail">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" id="subject" name="subject" placeholder="Enter Subject">
+                            <input type="text" class="form-control" id="subject" name="subject" placeholder="L'Objet">
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
-                            <textarea class="form-control" name="message" id="message" rows="1" placeholder="Enter Message"></textarea>
+                            <textarea class="form-control" name="message" id="message" rows="1" placeholder="Votre message"></textarea>
                         </div>
                     </div>
                     <div class="col-md-12 text-right">
-                        <button type="submit" value="submit" class="primary_btn"><span>Send Message</span></button>
+                        <button type="submit" value="submit" class="primary_btn"><span>Envoyé !</span></button>
                     </div>
                 </form>
             </div>
@@ -108,8 +108,8 @@ include_once 'header.php';
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <i class="fa fa-close"></i>
                 </button>
-                <h2>Thank you</h2>
-                <p>Your message is successfully sent...</p>
+                <h2>Merci</h2>
+                <p>Votre message a été envoyé...</p>
             </div>
         </div>
     </div>
@@ -124,8 +124,8 @@ include_once 'header.php';
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <i class="fa fa-close"></i>
                 </button>
-                <h2>Sorry !</h2>
-                <p> Something went wrong </p>
+                <h2>Désolé !</h2>
+                <p> Une erreur est survenue </p>
             </div>
         </div>
     </div>

@@ -44,7 +44,7 @@ include_once 'header.php';
 								anti-piratage permetant de sécuriser vos programmes
 							</p>
 							<div class="d-flex align-items-center">
-								<a class="primary_btn" href="#"><span>Nos offres</span></a>
+								<a class="primary_btn" href="#licence"><span>Nos offres</span></a>
 								<a id="play-home-video" class="video-play-button" href="https://www.youtube.com/watch?time_continue=2&v=J9YzcEe29d0">
 									<span></span>
 								</a>
@@ -57,7 +57,6 @@ include_once 'header.php';
 					<div class="col-lg-7">
 						<div class="home_right_img">
 							<img class="img-fluid" src="../../includes/img/banner/home-right.png" alt="">
-							<img class="img-fluid" src="includes/img/banner/home-right.png" alt="">
 						</div>
 					</div>
 				</div>
@@ -74,7 +73,7 @@ include_once 'header.php';
 					<div class="main_title">
 						<h2 id = "features">Leader dans la sécurisation des programmes</h2>
 						<p>Notre objectif est de vous fournir une solution de sécurité complète et fiable. Nous proposons trois gammes différentes de produit afin de répondre au mieux à votre besoin.</p>
-						<a href="#" class="primary_btn"><span>Découvrir nos offres!!</span></a>
+						<a href="#licence" class="primary_btn"><span>Découvrir nos offres!!</span></a>
 					</div>
 				</div>
 			</div>
@@ -155,7 +154,7 @@ include_once 'header.php';
 									<p class="line">Essai gratuit de 30 jours</p>
 									<h3>30 jours offerts</h3>
 									<p>Contacter notre équipe pour demander votre essai gratuit de 30 afin de pouvoir tester les fonctionnalitées du programme.</p>
-									<a class="primary_btn" href="contact.php>"><span>En savoir plus</span></a>
+									<a class="primary_btn" href="contact.php"><span>En savoir plus</span></a>
 								</div>
 							</div>
 							<div class="col-lg-6">
@@ -172,7 +171,7 @@ include_once 'header.php';
 									<p class="line">Nous contacter</p>
 									<h3>Notre équipe est à votre équoute</h3>
 									<p>Notre équipe d'expert est présente pour vous conseillez et vous aidez à choisir la solution adaptée a vos besoins.</p>
-									<a class="primary_btn" href="#"><span>En savoir plus</span></a>
+									<a class="primary_btn" href="contact.php"><span>En savoir plus</span></a>
 								</div>
 							</div>
 							<div class="col-lg-6">
@@ -189,7 +188,7 @@ include_once 'header.php';
 									<p class="line">En cas de problèmes</p>
 									<h3>Nous sommes la pour vous aidez</h3>
 									<p>Nos équipes techniques sont la pour vous aidez à mettre en place votre solution dan votre environnement.</p>
-									<a class="primary_btn" href="#"><span>En savoir plus</span></a>
+									<a class="primary_btn" href="contact.php"><span>En savoir plus</span></a>
 								</div>
 							</div>
 							<div class="col-lg-6 text-right">
