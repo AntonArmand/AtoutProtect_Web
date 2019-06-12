@@ -23,7 +23,7 @@
 							<li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
-							<li class="nav-item"><a href="login.php" class="primary_btn text-uppercase">Se connecter</a></li>
+							<li class="nav-item"><a href="login.php" class="primary_btn text-uppercase">Se connecter</a></li>	
 						</ul>
 					</div>
 				</div>
