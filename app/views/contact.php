@@ -8,7 +8,7 @@ include_once 'header.php';
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="includes/img/favicon.png" type="image/png">
-    <title>Nexus SaaS</title>
+    <title>AtoutProtect - Contact</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../../includes/css/bootstrap.css">
     <link rel="stylesheet" href="../../includes/vendors/linericon/style.css">
@@ -57,18 +57,18 @@ include_once 'header.php';
                 <div class="contact_info">
                     <div class="info_item">
                         <i class="lnr lnr-home"></i>
-                        <h6>California, United States</h6>
-                        <p>Santa monica bullevard</p>
+                        <h6>AtoutProtect, </br>56 avenue de Jean</h6>
+                        <p>31000 - Toulouse, </br> France</p>
                     </div>
                     <div class="info_item">
                         <i class="lnr lnr-phone-handset"></i>
-                        <h6><a href="#">00 (440) 9865 562</a></h6>
-                        <p>Mon to Fri 9am to 6 pm</p>
+                        <h6><a href="#">+33 (0)5 41 41 00 00</a></h6>
+                        <p>Lun au Ven 7h to 19h</p>
                     </div>
                     <div class="info_item">
                         <i class="lnr lnr-envelope"></i>
-                        <h6><a href="#">support@colorlib.com</a></h6>
-                        <p>Send us your query anytime!</p>
+                        <h6><a href="#">support@atoutprotect.com</a></h6>
+                        <p>Nous sommes la pour vous!</p>
                     </div>
                 </div>
             </div>
@@ -76,22 +76,22 @@ include_once 'header.php';
                 <form class="row contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Votre nom">
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter email address">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Votre e-mail">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" id="subject" name="subject" placeholder="Enter Subject">
+                            <input type="text" class="form-control" id="subject" name="subject" placeholder="L'objet">
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
-                            <textarea class="form-control" name="message" id="message" rows="1" placeholder="Enter Message"></textarea>
+                            <textarea class="form-control" name="message" id="message" rows="1" placeholder="Votre message"></textarea>
                         </div>
                     </div>
                     <div class="col-md-12 text-right">
-                        <button type="submit" value="submit" class="primary_btn"><span>Send Message</span></button>
+                        <button type="submit" value="submit" class="primary_btn"><span>Envoyer votre message</span></button>
                     </div>
                 </form>
             </div>
@@ -108,8 +108,8 @@ include_once 'header.php';
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <i class="fa fa-close"></i>
                 </button>
-                <h2>Thank you</h2>
-                <p>Your message is successfully sent...</p>
+                <h2>Merci</h2>
+                <p>Votre message a été envoyé...</p>
             </div>
         </div>
     </div>
@@ -124,8 +124,8 @@ include_once 'header.php';
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <i class="fa fa-close"></i>
                 </button>
-                <h2>Sorry !</h2>
-                <p> Something went wrong </p>
+                <h2>Desolé !</h2>
+                <p> Une erreur est survenue ! </p>
             </div>
         </div>
     </div>
