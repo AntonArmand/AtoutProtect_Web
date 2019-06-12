@@ -10,7 +10,7 @@ $login       = isset($_POST['login']) ? $_POST['login'] : '';
 $date       = new DateTime();
 $date       = $date->format('Y-m-d H:i:s');
 
-if($register != false)
+if($register)
 {
     $mailClient    = isset($_POST['mailClient']) ? $_POST['mailClient'] : '';
     $mdpClient     = isset($_POST['mdpClient']) ? $_POST['mdpClient'] : '';
@@ -32,7 +32,7 @@ if($register != false)
     else
     {
         $clientDAO->insertClient($nomClient, $prenomClient, $mailClient, $mdpClient, $date);
-        $client = new Client($array);
+        $client = $clientDAO->findByEmail($mailClient, hashage($mdpClient));
 
         $_SESSION['idClient'] = $client->getIdClient();
         $_SESSION['nomClient'] = $client->getNomClient();
@@ -41,7 +41,7 @@ if($register != false)
         $_SESSION['dateInscriptionClient'] = $client->getDateInscriptionClient();
         $_SESSION['dateModificationClient'] = $client->getDateModificationClient();
 
-        header('Location: ../../index.php');
+        header('Location: index.php');
     }
 }
 
@@ -104,7 +104,7 @@ else if($login)
         $_SESSION['mailClient'] = $client->getMailClient();
         $_SESSION['dateInscriptionClient'] = $client->getDateInscriptionClient();
         $_SESSION['dateModificationClient'] = $client->getDateModificationClient();
-        header('Location: ../../index.php');
+        header('Location: index.php');
 
     }
 }
