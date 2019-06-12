@@ -11,6 +11,7 @@ include_once '../controllers/clientController.php';
   <link rel="icon" href="includes/img/favicon.png" type="image/png">
   <title>Connexion - Inscription</title>
   <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="../../includes/css/custom.css">
   <link rel="stylesheet" href="../../includes/css/bootstrap.css">
   <link rel="stylesheet" href="../../includes/vendors/linericon/style.css">
   <link rel="stylesheet" href="../../includes/css/font-awesome.min.css">
@@ -76,8 +77,8 @@ include_once '../controllers/clientController.php';
                 <input class="form-control" type="password" required name="mdpClient"placeholder="Entrez votre mot de passe"/>
               </div>
             </div>
-            <div class="col-md-12 text-right">
-                <input class="primary_btn" type="submit" requiered name="login" value="Se connecter"><br />
+            <div class="col-md-12">
+                <input id="buttonSubmit" class="primary_btn" type="submit" requiered name="login" value="Se connecter"><br />
             </div>
           </form>
           <!-- REGISTER FORM -->
@@ -96,8 +97,8 @@ include_once '../controllers/clientController.php';
                 <input class="form-control" type="password" required name="mdpClient"placeholder="Entrez votre mot de passe"/>
               </div>
             </div>
-            <div class="col-md-12 text-right">
-                <input class="primary_btn" type="submit" requiered name="register" value="S'inscire"><br />
+            <div class="col-md-12">
+                <input id="buttonSubmit" class="primary_btn" type="submit" requiered name="register" value="S'inscire"><br />
             </div>
           </form>
         </div>
