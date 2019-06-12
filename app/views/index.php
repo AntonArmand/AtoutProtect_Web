@@ -72,7 +72,7 @@ include_once 'header.php';
 			<div class="row justify-content-center">
 				<div class="col-lg-8 text-center">
 					<div class="main_title">
-						<h2>Leader dans la sécurisation des programmes</h2>
+						<h2 id = "features">Leader dans la sécurisation des programmes</h2>
 						<p>Notre objectif est de vous fournir une solution de sécurité complète et fiable. Nous proposons trois gammes différentes de produit afin de répondre au mieux à votre besoin.</p>
 						<a href="#" class="primary_btn"><span>Découvrir nos offres!!</span></a>
 					</div>
@@ -265,7 +265,7 @@ include_once 'header.php';
 			<div class="row justify-content-center">
 				<div class="col-lg-8 text-center">
 					<div class="main_title">
-						<h2>Notre gamme de produits</h2>
+						<h2 id = "licence">Notre gamme de produits</h2>
 						<p>Choisissez la version la plus appropriée à vos besoins. Pour plus de question n'hésitez pas nous contacter afin que des experts puissent vous répondre.</p>
 					</div>
 				</div>
