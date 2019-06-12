@@ -82,10 +82,9 @@ include_once '../controllers/clientController.php';
           </form>
 
           </br>
-          <hr>
+          <hr> 
           </br>
-          </br> 
-          
+
           <!-- REGISTER FORM -->
           <form class="row contact_form"action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
             <div class="col-md-6">
@@ -101,7 +100,10 @@ include_once '../controllers/clientController.php';
               <div class="form-group">
                 <input class="form-control" type="password" required name="mdpClient"placeholder="Entrez votre mot de passe"/>
               </div>
-                <input class="primary_btn text-uppercase" type="submit" requiered name="register" value="S'inscire"><br />
+            </div>
+            <div class="col-md-12 text-right">
+                <input class="primary_btn" type="submit" requiered name="register" value="S'inscire"><br />
+            </div>
           </form>
         </div>
       </div>
