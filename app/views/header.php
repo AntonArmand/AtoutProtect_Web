@@ -21,7 +21,7 @@ session_start();
 							<li class="nav-item"><a class="nav-link" href="index.php#licence">Licence</a></li>
 							<li class="nav-item"><a class="nav-link" href="index.php#about-us">Qui somme nous ?</a></li>
 							<li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
-							<li class="nav-item"><a class="nav-link" href="logout.php">Deconnexion</a></li>
+							<li class="nav-item"><a class="nav-link" href="logout.php">Deconnexion</a>
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
 							<?php if (isset ($_SESSION['idClient']) > 0): ?>
@@ -30,7 +30,6 @@ session_start();
 							<?php else: ?>
 								<li class="nav-item"><a href="login.php" class="primary_btn text-uppercase">Connexion</a></li>
 							<?php endif; ?>
-
 							<li>
 						</ul>
 					</div>
