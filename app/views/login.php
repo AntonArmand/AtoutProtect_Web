@@ -98,7 +98,7 @@ include_once '../controllers/clientController.php';
               </div>
             </div>
             <div class="col-md-12">
-                <input id="buttonSubmit" class="primary_btn" type="submit" requiered name="register" value="S'inscire"><br />
+                <input id="buttonSubmit" class="primary_btn" type="submit" requiered name="register" value="S'inscrire"><br />
             </div>
           </form>
         </div>

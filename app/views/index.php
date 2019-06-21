@@ -17,6 +17,11 @@
 	<link rel="stylesheet" href="../../includes/vendors/animate-css/animate.css">
 	<link rel="stylesheet" href="../../includes/vendors/flaticon/flaticon.css">
 	<!-- main css -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<script
+    src="https://www.paypal.com/sdk/js?client-id=AThSLNxWR-fTEUnSCVKJTlYZ2cm0y49-pX0bNibw3aQod4GGzIpRn8O_A5ahtHu3P--y_DaNlchxVaJ6">
+  </script>
 	<link rel="stylesheet" href="../../includes/css/style.css">
 </head>
 
@@ -66,7 +71,7 @@ include_once 'header.php';
 	<!--================End Home Banner Area =================-->
 
 	<!--================Start Features Area =================-->
-	<section class="section_gap features_area">
+	<section id="features" class="section_gap features_area">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-lg-8 text-center">
@@ -259,7 +264,7 @@ include_once 'header.php';
 	<!--================End Big Features Area =================-->
 	
 	<!--================Srart Pricing Area =================-->
-	<section class="price_area section_gap">
+	<section id="licence" class="price_area section_gap">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-lg-8 text-center">
@@ -284,7 +289,7 @@ include_once 'header.php';
 						</div>
 						<div class="price_footer">
 							<h3>199<span class="dlr">€</span></h3>
-							<a class="primary_btn" href="#"><span>Acheter</span></a>
+							<div id="paypal-button-container"></div>
 						</div>
 					</div>
 				</div>
@@ -302,7 +307,7 @@ include_once 'header.php';
 						</div>
 						<div class="price_footer">
 							<h3>1499<span class="dlr">€</span></h3>
-							<a class="primary_btn" href="#"><span>Acheter</span></a>
+							<div id="paypal-button-container2"></div>
 						</div>
 					</div>
 				</div>
@@ -320,7 +325,7 @@ include_once 'header.php';
 						</div>
 						<div class="price_footer">
 							<h3>699<span class="dlr">€</span></h3>
-							<a class="primary_btn" href="#"><span>Acheter</span></a>
+							<div id="paypal-button-container3"></div>
 						</div>
 					</div>
 				</div>
@@ -330,7 +335,7 @@ include_once 'header.php';
 	<!--================End Pricing Area =================-->
 
 	<!--================ Start Testimonial Area =================-->
-	<div class="section_gap_top testimonial_area">
+	<div id="about-us" class="section_gap_top testimonial_area">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-lg-8 text-center">
@@ -488,3 +493,38 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> Tous 
 </body>
 
 </html>
+<script type="text/javascript">
+	paypal.Buttons({
+		  style: {
+    layout:  'horizontal',
+    color:   'white',
+    shape:   'pill',
+    label:   'paypal',
+    tagline: 'false',
+  },
+    createOrder: function(data, actions) {
+      return actions.order.create({
+        purchase_units: [{
+          amount: {
+            value: '0.01'
+          }
+        }]
+      });
+    },
+    onApprove: function(data, actions) {
+      return actions.order.capture().then(function(details) {
+        alert('Transaction completed by ' + details.payer.name.given_name);
+        // Call your server to save the transaction
+        return fetch('/paypal-transaction-complete', {
+          method: 'post',
+          headers: {
+            'content-type': 'application/json'
+          },
+          body: JSON.stringify({
+            orderID: data.orderID
+          })
+        });
+      });
+    }
+  }).render('#paypal-button-container');
+</script>
