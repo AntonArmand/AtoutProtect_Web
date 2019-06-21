@@ -506,7 +506,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> Tous 
       return actions.order.create({
         purchase_units: [{
           amount: {
-            value: '0.01'
+            value: '199'
           }
         }]
       });
