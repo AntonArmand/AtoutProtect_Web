@@ -9,10 +9,10 @@ private static $connexion;
 private static function get_connexion() {
     if (self::$connexion === null) {
       // Récupération des paramètres de configuration BD
-      $user = 'root';
-      $pass = '';
-      $host = 'localhost';
-      $base = 'aprotect';
+      $user = 'aprotect';
+      $pass = 'rpi-projet';
+      $host = '200.150.100.34';
+      $base = 'aprotect';;
       $dsn = 'mysql:host=' . $host . ';dbname=' . $base;
       // Création de la connexion
       try {
@@ -26,7 +26,7 @@ private static function get_connexion() {
   }
   
   function findByIdClient($idClient) {
-    $sql = "SELECT * FROM CLIENT WHERE idClient=:idClient";
+    $sql = "SELECT * FROM client WHERE idClient=:idClient";
     try {
       $sth = self::get_connexion()->prepare($sql);
       $sth->execute(array(":idClient" => $idClient));
@@ -41,7 +41,7 @@ private static function get_connexion() {
   }
 
   function findByEmail($mailClient, $mdpClient) {
-    $sql = "SELECT * FROM CLIENT WHERE mailClient=:mailClient AND mdpClient=:mdpClient ";
+    $sql = "SELECT * FROM client WHERE mailClient=:mailClient AND mdpClient=:mdpClient ";
     try {
       $sth = self::get_connexion()->prepare($sql);
       $sth->execute(array(":mailClient" => $mailClient,
@@ -59,7 +59,7 @@ private static function get_connexion() {
   }
 
     function findByEmailOnly($mailClient) {
-    $sql = "SELECT * FROM CLIENT WHERE mailClient=:mailClient";
+    $sql = "SELECT * FROM client WHERE mailClient=:mailClient";
     try {
       $sth = self::get_connexion()->prepare($sql);
       $sth->execute(array(":mailClient" => $mailClient));
@@ -102,7 +102,7 @@ private static function get_connexion() {
   }
 
   function insertClient($nomClient, $prenomClient, $mailClient, $mdpClient, $dateInscriptionClient) {
-    $sql = 'INSERT INTO CLIENT(nomClient, prenomClient, mailClient, mdpClient, dateInscriptionClient) VALUES (:nomClient,:prenomClient, :mailClient, :mdpClient, :dateInscriptionClient)';
+    $sql = 'INSERT INTO client (nomClient, prenomClient, mailClient, mdpClient, dateInscriptionClient) VALUES (:nomClient,:prenomClient, :mailClient, :mdpClient, :dateInscriptionClient)';
     try {
       $sth = self::get_connexion()->prepare($sql);
       $sth->execute(array(
@@ -121,7 +121,7 @@ private static function get_connexion() {
   }
 
   function updateClient($idClient, $nomClient, $prenomClient, $mailClient, $mdpClient) {
-    $sql = "UPDATE CLIENT SET idClient = :idClient, nomClient = :nomClient, prenomClient = :prenomClient, mailClient = :mailClient, mdpClient = :mdpClient WHERE idClient=:idClient ";
+    $sql = "UPDATE client SET idClient = :idClient, nomClient = :nomClient, prenomClient = :prenomClient, mailClient = :mailClient, mdpClient = :mdpClient WHERE idClient=:idClient ";
     try {
       $sth = self::get_connexion()->prepare($sql);
       $sth->execute(array(
@@ -140,7 +140,7 @@ private static function get_connexion() {
   }
 
   function deleteClient($idClient) {
-    $sql = "DELETE FROM CLIENT WHERE idClient =:idClient ";
+    $sql = "DELETE FROM client WHERE idClient =:idClient ";
 
     $sth = self::get_connexion()->prepare($sql);
     $sth->execute(array(":idClient" => $idClient));

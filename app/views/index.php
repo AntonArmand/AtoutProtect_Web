@@ -1,3 +1,8 @@
+<?php
+$variable = $_POST['test'];
+echo "VAR : " + $variable;
+
+?>
 <!doctype html>
 <html lang="fr">
 
@@ -20,7 +25,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
   	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<script
-    src="https://www.paypal.com/sdk/js?client-id=AThSLNxWR-fTEUnSCVKJTlYZ2cm0y49-pX0bNibw3aQod4GGzIpRn8O_A5ahtHu3P--y_DaNlchxVaJ6">
+    src="https://www.paypal.com/sdk/js?client-id=AW8sdGqU3L-BlYmlXh-Yhs0lQx_PuIeiexYNiOqkmCF38SDfbhXWCY0mo5i7I8R8jjhTXhCfSra_ik-k">
   </script>
 	<link rel="stylesheet" href="../../includes/css/style.css">
 </head>
@@ -494,6 +499,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> Tous 
 
 </html>
 <script type="text/javascript">
+
+<?php if (isset ($_SESSION['idClient']) > 0): ?>
 	paypal.Buttons({
 		  style: {
     layout:  'horizontal',
@@ -506,7 +513,47 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> Tous 
       return actions.order.create({
         purchase_units: [{
           amount: {
-            value: '199'
+            value: '1'
+          }
+        }]
+      });
+    },
+    onApprove: function(data, actions) {
+      return actions.order.capture().then(function(details) {
+        alert('Transaction completed by ' + details.payer.name.given_name);
+
+        window.location.href = "../controllers/licenceController.php?orderID=" + data.orderID;
+        // Call your server to save the transaction
+        return fetch('/paypal-transaction-complete', {
+          method: 'post',
+          headers: {
+            'content-type': 'application/json'
+          },
+          body: JSON.stringify({
+            orderID: data.orderID
+          })
+        });
+
+      });
+    }
+  }).render('#paypal-button-container');
+<?php endif; ?>
+
+
+<?php if (isset ($_SESSION['idClient']) > 0): ?>
+	paypal.Buttons({
+		  style: {
+    layout:  'horizontal',
+    color:   'white',
+    shape:   'pill',
+    label:   'paypal',
+    tagline: 'false',
+  },
+    createOrder: function(data, actions) {
+      return actions.order.create({
+        purchase_units: [{
+          amount: {
+            value: '1499'
           }
         }]
       });
@@ -526,5 +573,42 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> Tous 
         });
       });
     }
-  }).render('#paypal-button-container');
+  }).render('#paypal-button-container2');
+  <?php endif; ?>
+  
+  <?php if (isset ($_SESSION['idClient']) > 0): ?>
+	paypal.Buttons({
+		  style: {
+    layout:  'horizontal',
+    color:   'white',
+    shape:   'pill',
+    label:   'paypal',
+    tagline: 'false',
+  },
+    createOrder: function(data, actions) {
+      return actions.order.create({
+        purchase_units: [{
+          amount: {
+            value: '699'
+          }
+        }]
+      });
+    },
+    onApprove: function(data, actions) {
+      return actions.order.capture().then(function(details) {
+        alert('Transaction completed by ' + details.payer.name.given_name);
+        // Call your server to save the transaction
+        return fetch('/paypal-transaction-complete', {
+          method: 'post',
+          headers: {
+            'content-type': 'application/json'
+          },
+          body: JSON.stringify({
+            orderID: data.orderID
+          })
+        });
+      });
+    }
+  }).render('#paypal-button-container3');
+  <?php endif; ?>
 </script>

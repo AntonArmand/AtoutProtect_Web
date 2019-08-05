@@ -11,9 +11,9 @@ class PaypalDAO {
   private static function get_connexion() {
     if (self::$connexion === null) {
       // Récupération des paramètres de configuration BD
-      $user = 'root';
-      $pass = '';
-      $host = 'localhost';
+      $user = 'aprotect';
+      $pass = 'rpi-projet';
+      $host = '200.150.100.34';
       $base = 'aprotect';
       $dsn = 'mysql:host=' . $host . ';dbname=' . $base;
       // Création de la connexion
@@ -28,7 +28,7 @@ class PaypalDAO {
   }
   
   function findByIdPaypal($idPaypal) {
-    $sql = "SELECT * FROM PAYPAL WHERE idPaypal=:idPaypal";
+    $sql = "SELECT * FROM paypal WHERE idPaypal=:idPaypal";
     try {
       $sth = self::get_connexion()->prepare($sql);
       $sth->execute(array(":idPaypal" => $idPaypal));
@@ -45,7 +45,7 @@ class PaypalDAO {
 
 
   function findAllPaypal() {
-    $sql = "SELECT * FROM PAYPAL";
+    $sql = "SELECT * FROM paypal";
     try {
       $sth = self::get_connexion()->prepare($sql);
       $sth->execute();
@@ -66,7 +66,7 @@ class PaypalDAO {
 
 
   function insertPaypal($idPaypal) {
-    $sql = 'INSERT INTO PAYPAL(idPaypal) VALUES (:idPaypal)';
+    $sql = 'INSERT INTO paypal(idPaypal) VALUES (:idPaypal)';
     try {
       $sth = self::get_connexion()->prepare($sql);
       $sth->execute(array(
@@ -82,7 +82,7 @@ class PaypalDAO {
 
 
   function updatePaypal($idPaypal) {
-  $sql = "UPDATE PAYPAL SET idPaypal = :idPaypal WHERE idPaypal=:idPaypal ";
+  $sql = "UPDATE paypal SET idPaypal = :idPaypal WHERE idPaypal=:idPaypal ";
     try {
       $sth = self::get_connexion()->prepare($sql);
       var_dump($sth);
@@ -101,7 +101,7 @@ class PaypalDAO {
 
 
   function deletePaypal($idPaypal) {
-    $sql = "DELETE FROM PAYPAL WHERE idPaypal =:idPaypal ";
+    $sql = "DELETE FROM paypal WHERE idPaypal =:idPaypal ";
   
       $sth = self::get_connexion()->prepare($sql);
       $sth->execute(array(":idPaypal" => $idPaypal));

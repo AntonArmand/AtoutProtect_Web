@@ -33,7 +33,6 @@ session_start();
 								<li class="nav-item"><a href="login.php" class="primary_btn text-uppercase">Connexion</a></li>
 							<?php endif; ?>
 							<li>
-							<input type="image" id="logoutButton" alt="Login" src="../../includes/img/logout.png">
 						</ul>
 					</div>
 				</div>

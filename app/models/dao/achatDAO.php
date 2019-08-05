@@ -10,9 +10,9 @@ class AchatDAO {
   private static function get_connexion() {
     if (self::$connexion === null) {
       // Récupération des paramètres de configuration BD
-      $user = 'root';
-      $pass = '';
-      $host = 'localhost';
+      $user = 'aprotect';
+      $pass = 'rpi-projet';
+      $host = '200.150.100.34';
       $base = 'aprotect';
       $dsn = 'mysql:host=' . $host . ';dbname=' . $base;
       // Création de la connexion
@@ -27,7 +27,7 @@ class AchatDAO {
   }
 
   function findByIdAchat($idAchat) {
-    $sql = "SELECT * FROM ACHAT WHERE idAchat=:idAchat";
+    $sql = "SELECT * FROM achat WHERE idAchat=:idAchat";
     try {
       $sth = self::get_connexion()->prepare($sql);
       $sth->execute(array(":idAchat" => $idAchat));
@@ -44,7 +44,7 @@ class AchatDAO {
 
 
   function findAllAchat() {
-    $sql = "SELECT * FROM ACHAT";
+    $sql = "SELECT * FROM achat";
     try {
       $sth = self::get_connexion()->prepare($sql);
       $sth->execute();
@@ -65,7 +65,7 @@ class AchatDAO {
 
 
   function insertAchat($idAchat) {
-    $sql = 'INSERT INTO ACHAT(idAchat) VALUES (:idAchat)';
+    $sql = 'INSERT INTO achat(idAchat) VALUES (:idAchat)';
     try {
       $sth = self::get_connexion()->prepare($sql);
       $sth->execute(array(
@@ -73,7 +73,7 @@ class AchatDAO {
       ));
     
   } catch (PDOException $e) {
-      throw new Exception("Erreur lors de la requête SQL : " . $e->getMessage());
+      throw new Exception("Erreur lors de la requete SQL : " . $e->getMessage());
     }
     
       return $sth;
@@ -81,7 +81,7 @@ class AchatDAO {
 
 
   function updateAchat($idAchat) {
-  $sql = "UPDATE ACHAT SET idAchat = :idAchat WHERE idAchat=:idAchat ";
+  $sql = "UPDATE achat SET idAchat = :idAchat WHERE idAchat=:idAchat ";
     try {
       $sth = self::get_connexion()->prepare($sql);
       var_dump($sth);

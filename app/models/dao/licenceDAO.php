@@ -10,9 +10,9 @@ class LicenceDAO {
 private static function get_connexion() {
     if (self::$connexion === null) {
       // Récupération des paramètres de configuration BD
-      $user = 'root';
-      $pass = '';
-      $host = 'localhost';
+      $user = 'aprotect';
+      $pass = 'rpi-projet';
+      $host = '200.150.100.34';
       $base = 'aprotect';
       $dsn = 'mysql:host=' . $host . ';dbname=' . $base;
       // Création de la connexion
@@ -27,7 +27,7 @@ private static function get_connexion() {
   }
   
   function findByCodeLicence($codeLicence) {
-    $sql = "SELECT * FROM LICENCE WHERE codeLicence=:codeLicence";
+    $sql = "SELECT * FROM licence WHERE codeLicence=:codeLicence";
     try {
       $sth = self::get_connexion()->prepare($sql);
       $sth->execute(array(":codeLicence" => $codeLicence));
@@ -44,7 +44,7 @@ private static function get_connexion() {
 
 
   function findAllLicence() {
-    $sql = "SELECT * FROM LICENCE";
+    $sql = "SELECT * FROM licence";
     try {
       $sth = self::get_connexion()->prepare($sql);
       $sth->execute();
@@ -64,13 +64,15 @@ private static function get_connexion() {
   }
 
 
-  function insertLicence($codeLicence) {
-    $sql = 'INSERT INTO LICENCE(codeLicence) VALUES (:codeLicence)';
+  function insertLicence($codeLicence, $dateAchat, $dateExpiration, $status) {
+    $sql = 'INSERT INTO licence(codeLicence, dateAchat, dateExpiration, status) VALUES (:codeLicence, :dateAchat, :dateExpiration, :status)';
     try {
       $sth = self::get_connexion()->prepare($sql);
       $sth->execute(array(
-        ":codeLicence"      =>$codeLicence,
-        "dateAchat"         =>$dateAchat
+        ":codeLicence"       =>$codeLicence,
+        ":dateAchat"         =>$dateAchat,
+        ":dateExpiration"    =>$dateExpiration,
+        ":status"            =>$status
       ));
     
   } catch (PDOException $e) {
@@ -81,7 +83,7 @@ private static function get_connexion() {
 
 
   function updateLicence($codeLicence) {
-  $sql = "UPDATE LICENCE SET codeLicence = :codeLicence WHERE codeLicence=:codeLicence ";
+  $sql = "UPDATE licence SET codeLicence = :codeLicence WHERE codeLicence=:codeLicence ";
     try {
       $sth = self::get_connexion()->prepare($sql);
       var_dump($sth);
@@ -101,7 +103,7 @@ private static function get_connexion() {
 
 
   function deleteLicence($codeLicence) {
-    $sql = "DELETE FROM LICENCE WHERE codeLicence =:codeLicence ";
+    $sql = "DELETE FROM licence WHERE codeLicence =:codeLicence ";
       try{
 
       }
@@ -120,26 +122,3 @@ private static function get_connexion() {
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -51,8 +51,8 @@ include_once '../controllers/clientController.php';
           <div class="contact_info">
             <div class="info_item">
               <i class="lnr lnr-home"></i>
-              <h6>AtoutProtect, <br> 56 Avenue Jean</h6>
-              <p>31000 - Toulouse<br> France</p>
+              <h6>AtoutProtect, <br> 50 Rue de Limayrac</h6>
+              <p>31500 - Toulouse<br> France</p>
             </div>
             <div class="info_item">
               <i class="lnr lnr-phone-handset"></i>

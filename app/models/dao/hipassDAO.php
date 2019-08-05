@@ -10,9 +10,9 @@ class HipassDAO {
 private static function get_connexion() {
     if (self::$connexion === null) {
       // Récupération des paramètres de configuration BD
-      $user = 'root';
-      $pass = '';
-      $host = 'localhost';
+      $user = 'aprotect';
+      $pass = 'rpi-projet';
+      $host = '200.150.100.34';
       $base = 'aprotect';
       $dsn = 'mysql:host=' . $host . ';dbname=' . $base;
       // Création de la connexion
