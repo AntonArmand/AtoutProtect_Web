@@ -1,14 +1,12 @@
 <?php
 include_once '../models/dao/licenceDAO.php';
+include_once '../inc/functions.php';
 
-//Generation de la licence ici
-
-$codeLicence="ABAA-BBBB-CCCC-DDDD";
+$codeLicence=generate_license();
 $dateAchat= date("Y-m-d");
-$dateExpiration=$dateAchat;
+$dateExpiration=date('Y-m-d', strtotime("+30 days"));
 $status=True;
 
 $licenceDAO = new licenceDAO();
 $licenceDAO->insertLicence($codeLicence, $dateAchat, $dateExpiration, $status);
-
 ?>
