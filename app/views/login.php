@@ -67,7 +67,7 @@ include_once '../controllers/clientController.php';
           </div>
         </div>
         <div class="col-lg-9">
-          <!-- REGISTER FORM -->
+          <!-- LOGIN FORM -->
           <form class="row contact_form"action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
             <div class="col-md-6">
               <div class="form-group">
@@ -81,6 +81,9 @@ include_once '../controllers/clientController.php';
                 <input id="buttonSubmit" class="primary_btn" type="submit" requiered name="login" value="Se connecter"><br />
             </div>
           </form>
+          
+          <hr> 
+          
           <!-- REGISTER FORM -->
           <form class="row contact_form"action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
             <div class="col-md-6">

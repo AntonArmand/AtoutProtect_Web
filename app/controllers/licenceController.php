@@ -9,4 +9,5 @@ $status=True;
 
 $licenceDAO = new licenceDAO();
 $licenceDAO->insertLicence($codeLicence, $dateAchat, $dateExpiration, $status);
+
 ?>

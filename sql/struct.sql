@@ -42,18 +42,6 @@ CREATE TABLE `achat` (
 -- --------------------------------------------------------
 
 --
--- Structure de la table `activation`
---
-
-CREATE TABLE `activation` (
-  `idActivation` int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
-  `statut` tinyint(4) DEFAULT NULL,
-  `biosNumber` varchar(45) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
 -- Structure de la table `allopass`
 --
 
@@ -87,7 +75,7 @@ CREATE TABLE `licence` (
   `codeLicence` int(11) PRIMARY KEY NOT NULL,
   `dateAchat` date DEFAULT NULL,
   `dateExpiration` date DEFAULT NULL,
-  `idActivation` int(11) NOT NULL
+  `status` bool
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -109,12 +97,6 @@ ALTER TABLE `achat`
   ADD CONSTRAINT `fk_AchatLicence` FOREIGN KEY (`codeLicence`) REFERENCES `licence` (`codeLicence`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   ADD CONSTRAINT `fk_AchatPaypal` FOREIGN KEY (`idPaypal`) REFERENCES `paypal` (`idPaypal`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
---
--- Contraintes pour la table `licence`
---
-ALTER TABLE `licence`
-  ADD CONSTRAINT `fk_licenceActivation` FOREIGN KEY (`idActivation`) REFERENCES `activation` (`idActivation`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

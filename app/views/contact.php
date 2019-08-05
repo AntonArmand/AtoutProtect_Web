@@ -45,12 +45,12 @@ include_once 'header.php';
     <section class="contact_area section_gap">
         <div class="container">
             <div id="mapBox" class="mapBox" 
-            data-lat="40.701083" 
-            data-lon="-74.1522848" 
-            data-zoom="13" 
-            data-info="PO Box CT16122 Collins Street West, Victoria 8007, Australia."
-            data-mlat="40.701083"
-            data-mlon="-74.1522848">
+            data-lat="43.593826" 
+            data-lon="1.4684249" 
+            data-zoom="15" 
+            data-info="insitut Limayrac, 50 Route de Limayrac, 31500, Toulouse."
+            data-mlat="43.593826"
+            data-mlon="1.4684249">
         </div>
         <div class="row">
             <div class="col-lg-3">
@@ -91,7 +91,7 @@ include_once 'header.php';
                         </div>
                     </div>
                     <div class="col-md-12 text-right">
-                        <button type="submit" value="submit" class="primary_btn"><span>Envoyé !</span></button>
+                        <button type="submit" value="submit" class="primary_btn"><span>Envoyer !</span></button>
                     </div>
                 </form>
             </div>
