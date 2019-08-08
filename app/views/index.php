@@ -1,8 +1,8 @@
 <?php
 $variable = $_POST['test'];
 echo "VAR : " + $variable;
-
 ?>
+
 <!doctype html>
 <html lang="fr">
 

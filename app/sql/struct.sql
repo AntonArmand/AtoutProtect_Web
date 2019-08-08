@@ -31,12 +31,11 @@ USE `aprotect`;
 --
 
 CREATE TABLE `achat` (
-  `idAchat` int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
-  `dateAchat` date NOT NULL,
+  `orderID` varchar(17) PRIMARY KEY NOT NULL,
   `idClient` int(11) NOT NULL,
-  `idPaypal` int(11) NOT NULL,
-  `idAlloPass` int(11) NOT NULL,
-  `codeLicence` int(11) NOT NULL
+  `dateAchat` date NOT NULL,
+  `name` varchar(40) NOT NULL,
+  `amount` int(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -49,16 +48,6 @@ CREATE TABLE `activation` (
   `idActivation` int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
   `statut` tinyint(4) NOT NULL,
   `biosNumber` varchar(45) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
--- Structure de la table `allopass`
---
-
-CREATE TABLE `allopass` (
-  `idAlloPass` int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -93,21 +82,10 @@ CREATE TABLE `licence` (
 -- --------------------------------------------------------
 
 --
--- Structure de la table `paypal`
---
-
-CREATE TABLE `paypal` (
-  `idPaypal` int(11) PRIMARY KEY NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
 -- Contraintes pour la table `achat`
 --
 ALTER TABLE `achat`
-  ADD CONSTRAINT `fk_achatAlloPass` FOREIGN KEY (`idAlloPass`) REFERENCES `allopass` (`idAlloPass`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_AchatClient` FOREIGN KEY (`idClient`) REFERENCES `client` (`idClient`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_AchatLicence` FOREIGN KEY (`codeLicence`) REFERENCES `licence` (`codeLicence`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_AchatPaypal` FOREIGN KEY (`idPaypal`) REFERENCES `paypal` (`idPaypal`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+  ADD CONSTRAINT `fk_AchatClient` FOREIGN KEY (`idClient`) REFERENCES `client` (`idClient`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
 -- Contraintes pour la table `licence`
