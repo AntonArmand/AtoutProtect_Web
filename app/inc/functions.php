@@ -6,7 +6,7 @@ function hashage($passe)
 }
 
 
-function generate_license() {
+function generate_licence() {
 
     $num_segments = 4;
     $segment_chars = 4;

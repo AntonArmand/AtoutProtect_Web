@@ -1,9 +1,4 @@
-<?php
-$variable = $_POST['test'];
-echo "VAR : " + $variable;
-?>
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 
 <head>
@@ -27,6 +22,8 @@ echo "VAR : " + $variable;
 	<script
     src="https://www.paypal.com/sdk/js?client-id=AW8sdGqU3L-BlYmlXh-Yhs0lQx_PuIeiexYNiOqkmCF38SDfbhXWCY0mo5i7I8R8jjhTXhCfSra_ik-k">
   </script>
+
+  <script type="text/javascript" src="../inc/function.js"></script>
 	<link rel="stylesheet" href="../../includes/css/style.css">
 </head>
 
@@ -501,6 +498,12 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> Tous 
 <script type="text/javascript">
 
 <?php if (isset ($_SESSION['idClient']) > 0): ?>
+	var today = new Date();
+	var day = String(today.getDate());
+	var month = String(today.getMonth() + 1);
+	var year = today.getFullYear();
+	var date = year + "-" + month + "-" + day
+
 	paypal.Buttons({
 		  style: {
     layout:  'horizontal',
@@ -521,8 +524,13 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> Tous 
     onApprove: function(data, actions) {
       return actions.order.capture().then(function(details) {
         alert('Transaction completed by ' + details.payer.name.given_name);
-
-        window.location.href = "../controllers/licenceController.php?orderID=" + data.orderID;
+        var name = details.payer.name.given_name;
+        var amount = 199;
+        window.location = "../controllers/licenceController.php?orderID=" + data.orderID 
+        																  + "&userID=" + <?php echo $_SESSION["idClient"] ?> 
+        																  + "&name=" + name 
+        																  + "&date=" + date 
+        																  + "&amount=" + amount;
         // Call your server to save the transaction
         return fetch('/paypal-transaction-complete', {
           method: 'post',
@@ -562,6 +570,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> Tous 
       return actions.order.capture().then(function(details) {
         alert('Transaction completed by ' + details.payer.name.given_name);
         // Call your server to save the transaction
+        var amount = 1499;
         return fetch('/paypal-transaction-complete', {
           method: 'post',
           headers: {
@@ -598,6 +607,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> Tous 
       return actions.order.capture().then(function(details) {
         alert('Transaction completed by ' + details.payer.name.given_name);
         // Call your server to save the transaction
+        var amount = 699;
         return fetch('/paypal-transaction-complete', {
           method: 'post',
           headers: {

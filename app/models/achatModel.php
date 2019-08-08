@@ -1,7 +1,12 @@
 <?php
 
 class Achat  {
-	private $idAchat;
+	private $orderID;
+  private $name;
+  private $idClient;
+  private $dateAchat;
+  private $dateExpiration;
+  private $amount;
 
 
   /** CONSTRUCTEUR **/
@@ -14,18 +19,67 @@ class Achat  {
 
     /** SETTER -- START **/
 
-  	function getIdAchat() 
+  	function getOrderID() 
   	{
-   		return $this->idAchat;
+   		return $this->orderID;
   	}
+
+    function getIdClient() 
+    {
+      return $this->idClient;
+    }
+
+    function getName() 
+    {
+      return $this->name;
+    }
+
+    function getDateAchat() 
+    {
+      return $this->dateAchat;
+    }
+
+    function getDateExpiration() 
+    {
+      return $this->dateExpiration;
+    }
+    function getAmount() 
+    {
+      return $this->amount;
+    }
+
+
 
     /** GETTER -- END **/
 
     /** SETTER -- START **/
 
-    function set_idAchat($idAchat) 
+    function set_orderId($orderID) 
     {
-      $this->idAchat = $idAchat;
+      $this->orderID = $orderID;
+    }
+    function set_idClient($idClient) 
+    {
+      $this->idClient = $idClient;
+    }
+
+    function set_name($name) 
+    {
+      $this->name = $name;
+    }
+
+    function set_dateAchat($dateAchat) 
+    {
+      $this->dateAchat = $dateAchat;
+    }
+
+    function set_dateExpiration($dateExpiration) 
+    {
+      $this->dateExpiration = $dateExpiration;
+    }
+    function set_amount($amount) 
+    {
+      $this->amount = $amount;
     }
 
   /** SETTER -- END **/

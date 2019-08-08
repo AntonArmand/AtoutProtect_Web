@@ -64,15 +64,15 @@ private static function get_connexion() {
   }
 
 
-  function insertLicence($codeLicence, $dateAchat, $dateExpiration, $status) {
-    $sql = 'INSERT INTO licence(codeLicence, dateAchat, dateExpiration, status) VALUES (:codeLicence, :dateAchat, :dateExpiration, :status)';
+  function insertLicence($codeLicence, $dateAchat, $dateExpiration, $idActivation) {
+    $sql = 'INSERT INTO licence(codeLicence, dateAchat, dateExpiration, idActivation) VALUES (:codeLicence, :dateAchat, :dateExpiration, :idActivation)';
     try {
       $sth = self::get_connexion()->prepare($sql);
       $sth->execute(array(
         ":codeLicence"       =>$codeLicence,
         ":dateAchat"         =>$dateAchat,
         ":dateExpiration"    =>$dateExpiration,
-        ":status"            =>$status
+        ":idActivation"    =>$idActivation
       ));
     
   } catch (PDOException $e) {

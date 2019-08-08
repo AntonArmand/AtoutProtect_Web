@@ -1,15 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.0
+-- version 4.6.6deb4
 -- https://www.phpmyadmin.net/
 --
--- Hôte : 127.0.0.1
--- Généré le :  mer. 15 mai 2019 à 09:28
--- Version du serveur :  5.7.17
--- Version de PHP :  5.6.30
+-- Client :  200.150.100.34
+-- Généré le :  Ven 09 Août 2019 à 00:35
+-- Version du serveur :  10.1.38-MariaDB-0+deb9u1
+-- Version de PHP :  7.0.33-0+deb9u3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -30,13 +28,13 @@ USE `aprotect`;
 -- Structure de la table `achat`
 --
 
+DROP TABLE IF EXISTS `achat`;
 CREATE TABLE `achat` (
-  `idAchat` int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
-  `dateAchat` date NOT NULL,
+  `orderID` varchar(17) NOT NULL,
   `idClient` int(11) NOT NULL,
-  `idPaypal` int(11) NOT NULL,
-  `idAlloPass` int(11) NOT NULL,
-  `codeLicence` int(11) NOT NULL
+  `dateAchat` date NOT NULL,
+  `name` varchar(40) NOT NULL,
+  `amount` int(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -45,20 +43,12 @@ CREATE TABLE `achat` (
 -- Structure de la table `activation`
 --
 
+DROP TABLE IF EXISTS `activation`;
 CREATE TABLE `activation` (
-  `idActivation` int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
-  `statut` tinyint(4) NOT NULL,
+  `idActivation` int(11) NOT NULL,
+  `codeLicence` varchar(17) NOT NULL,
+  `status` tinyint(4) NOT NULL,
   `biosNumber` varchar(45) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
--- Structure de la table `allopass`
---
-
-CREATE TABLE `allopass` (
-  `idAlloPass` int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -67,8 +57,9 @@ CREATE TABLE `allopass` (
 -- Structure de la table `client`
 --
 
+DROP TABLE IF EXISTS `client`;
 CREATE TABLE `client` (
-  `idClient` int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT  ,
+  `idClient` int(11) NOT NULL,
   `nomClient` varchar(45) NOT NULL,
   `prenomClient` varchar(45) NOT NULL,
   `mailClient` varchar(64) NOT NULL,
@@ -83,38 +74,73 @@ CREATE TABLE `client` (
 -- Structure de la table `licence`
 --
 
+DROP TABLE IF EXISTS `licence`;
 CREATE TABLE `licence` (
-  `codeLicence` int(11) PRIMARY KEY NOT NULL,
+  `codeLicence` varchar(11) NOT NULL,
   `dateAchat` date NOT NULL,
   `dateExpiration` date NOT NULL,
   `idActivation` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
--- --------------------------------------------------------
-
 --
--- Structure de la table `paypal`
+-- Index pour les tables exportées
 --
 
-CREATE TABLE `paypal` (
-  `idPaypal` int(11) PRIMARY KEY NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+--
+-- Index pour la table `achat`
+--
+ALTER TABLE `achat`
+  ADD PRIMARY KEY (`orderID`),
+  ADD KEY `fk_AchatClient` (`idClient`);
+
+--
+-- Index pour la table `activation`
+--
+ALTER TABLE `activation`
+  ADD PRIMARY KEY (`idActivation`);
+
+--
+-- Index pour la table `client`
+--
+ALTER TABLE `client`
+  ADD PRIMARY KEY (`idClient`);
+
+--
+-- Index pour la table `licence`
+--
+ALTER TABLE `licence`
+  ADD PRIMARY KEY (`codeLicence`),
+  ADD KEY `fk_licenceActivation` (`idActivation`);
+
+--
+-- AUTO_INCREMENT pour les tables exportées
+--
+
+--
+-- AUTO_INCREMENT pour la table `activation`
+--
+ALTER TABLE `activation`
+  MODIFY `idActivation` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+--
+-- AUTO_INCREMENT pour la table `client`
+--
+ALTER TABLE `client`
+  MODIFY `idClient` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+--
+-- Contraintes pour les tables exportées
+--
 
 --
 -- Contraintes pour la table `achat`
 --
 ALTER TABLE `achat`
-  ADD CONSTRAINT `fk_achatAlloPass` FOREIGN KEY (`idAlloPass`) REFERENCES `allopass` (`idAlloPass`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_AchatClient` FOREIGN KEY (`idClient`) REFERENCES `client` (`idClient`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_AchatLicence` FOREIGN KEY (`codeLicence`) REFERENCES `licence` (`codeLicence`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_AchatPaypal` FOREIGN KEY (`idPaypal`) REFERENCES `paypal` (`idPaypal`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+  ADD CONSTRAINT `fk_AchatClient` FOREIGN KEY (`idClient`) REFERENCES `client` (`idClient`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
 -- Contraintes pour la table `licence`
 --
 ALTER TABLE `licence`
   ADD CONSTRAINT `fk_licenceActivation` FOREIGN KEY (`idActivation`) REFERENCES `activation` (`idActivation`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
