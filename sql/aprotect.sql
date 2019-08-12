@@ -46,7 +46,7 @@ CREATE TABLE `achat` (
 DROP TABLE IF EXISTS `activation`;
 CREATE TABLE `activation` (
   `idActivation` int(11) NOT NULL,
-  `codeLicence` varchar(17) NOT NULL,
+  `codeLicence` varchar(20) NOT NULL,
   `status` tinyint(4) NOT NULL,
   `biosNumber` varchar(45) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -76,7 +76,7 @@ CREATE TABLE `client` (
 
 DROP TABLE IF EXISTS `licence`;
 CREATE TABLE `licence` (
-  `codeLicence` varchar(11) NOT NULL,
+  `codeLicence` varchar(20) NOT NULL,
   `dateAchat` date NOT NULL,
   `dateExpiration` date NOT NULL,
   `idActivation` int(11) NOT NULL

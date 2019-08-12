@@ -87,6 +87,10 @@ include_once '../controllers/clientController.php';
               <div class="form-group">
                 <input class="form-control" type="password" required name="newMdpClientConfirm" placeholder="Confirmez votre nouveau mot de passe"/>
               </div>
+              <hr>
+              <div class="form-group">
+                <input class="form-control" type="text" required name="serialKey" placeholder="Licences"<?php echo $_SESSION['licence']; ?>"/>
+              </div>
             </div>
             <div class="col-md-12">
                 <input id="buttonSubmit" class="primary_btn" type="submit" requiered name="save" value="Enregistrer"><br />
