@@ -82,7 +82,7 @@
     }
     mailChimp();
 	
-	$('select').niceSelect();
+	// $('select').niceSelect();
 	
 	$('.counter').counterUp({
 		delay: 10,
