@@ -1,6 +1,5 @@
 <?php
-include_once '/includes/bdd/connect.php';
-include_once '../achatModel.php';
+include_once '../licenceModel.php';
 
 class LicenceDAO {
 
@@ -36,7 +35,7 @@ private static function get_connexion() {
       throw new Exception("Erreur lors de la requête SQL : " . $e->getMessage());
     }
 
-        $licence = new Licence($row);
+        $licence = new licence($row);
 
     return $licence;    
     // Retourne un tableau d'objets
@@ -55,7 +54,7 @@ private static function get_connexion() {
     $tableau = array();
    
     foreach ($rows as $row) {
-      $licence = new Licence($row);
+      $licence = new licence($row);
       
       $tableau[] = $licence;
     }
@@ -63,16 +62,38 @@ private static function get_connexion() {
     // Retourne un tableau d'objets
   }
 
+    function findAllLicenceByIdClient($idClient) {
+    $sql = "SELECT * FROM licence WHERE idClient=:idClient";
+    try {
+      $sth = self::get_connexion()->prepare($sql);
+      $sth->execute(array(":idClient" => $idClient));
+      $rows = $sth->fetchAll(PDO::FETCH_ASSOC);
+    } catch (PDOException $e) {
+      throw new Exception("Erreur lors de la requête SQL : " . $e->getMessage());
+    }
+    $tableau = array();
+    foreach ($rows as $row) {
+      //var_dump($row);
+      $licence = new licence($row);
+      
+      $tableau[] = $licence;
+    }
+    return $tableau; 
+  }
 
-  function insertLicence($codeLicence, $dateAchat, $dateExpiration, $idActivation) {
-    $sql = 'INSERT INTO licence(codeLicence, dateAchat, dateExpiration, idActivation) VALUES (:codeLicence, :dateAchat, :dateExpiration, :idActivation)';
+
+  function insertLicence($codeLicence, $dateAchat, $dateExpiration, $status, $biosNumber,$idClient) {
+    $sql = 'INSERT INTO licence(codeLicence, dateAchat, dateExpiration, status, biosNumber, idClient) VALUES (:codeLicence, :dateAchat, :dateExpiration, :status, :biosNumber, :idClient)';
     try {
       $sth = self::get_connexion()->prepare($sql);
       $sth->execute(array(
         ":codeLicence"       =>$codeLicence,
         ":dateAchat"         =>$dateAchat,
         ":dateExpiration"    =>$dateExpiration,
-        ":idActivation"    =>$idActivation
+        ":status"            =>$status,
+        ":biosNumber"        =>$biosNumber,
+        ":idClient"          =>$idClient
+
       ));
     
   } catch (PDOException $e) {

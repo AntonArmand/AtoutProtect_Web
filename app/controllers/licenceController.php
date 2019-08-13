@@ -1,31 +1,33 @@
 <?php
 include_once '../models/dao/licenceDAO.php';
-include_once '../models/dao/activationDAO.php';
+include_once '../models/licenceModel.php';
 include_once '../inc/functions.php';
 
 $codeLicence 	= generate_licence();
-$biosNumber 	= "bios";
+$biosNumber 	= "01-02-03-04";
 
-$dateAchat	 	= $_GET['date'];
+$dateAchat	 	= date('Y-m-d');
 $dateExpiration	= date('Y-m-d', strtotime("+30 days"));
 $name	  	 	= $_GET['name'];
 $orderID 		= $_GET['orderID'];
-$userID 		= $_GET['userID']; 
+$userID 		= 7;
 $status			= true;
 
-echo "dateAchat" + $dateAchat;
+/**echo "dateAchat" + $dateAchat;
 echo "dateExpiration" + $dateExpiration;
 echo "name" + $name;
 echo "orderID" + $orderID;
-echo "userID" + $userID;
+echo "userID" + $userID;**/
 
-$activation = new activationDAO();
-$activation->insertLicenceDesactived($codeLicence, false, $biosNumber);
+/**$licenceDAO = new LicenceDAO();
+$licenceDAO->insertLicence($codeLicence, $dateAchat, $dateExpiration, 0, $biosNumber, $userID);
+$licences = $licenceDAO->findAllLicenceByIdClient($userID);**/
 
-$licenceDAO = new licenceDAO();
-$licenceDAO->insertLicence($codeLicence, $dateAchat, $dateExpiration, 3);
-
-
-// Rajouter une clé étrangère dans activation qui pointe vers idLicence de licence.
+/**function displayLicence(){
+	foreach ($licences as $licence) {
+		echo $licence->getCodeLicence();
+	}	
+}
+**/
 
 ?>

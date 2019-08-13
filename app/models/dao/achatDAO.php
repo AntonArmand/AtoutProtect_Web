@@ -12,7 +12,7 @@ class AchatDAO {
       // Récupération des paramètres de configuration BD
       $user = 'aprotect';
       $pass = 'rpi-projet';
-      $host = '200.150.100.34';
+      $host = '';
       $base = 'aprotect';
       $dsn = 'mysql:host=' . $host . ';dbname=' . $base;
       // Création de la connexion

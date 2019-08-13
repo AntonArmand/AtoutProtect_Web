@@ -1,6 +1,10 @@
 <?php
 include_once 'header.php';
 include_once '../controllers/clientController.php';
+include_once '../controllers/licenceController.php';
+
+$licenceDAO = new LicenceDAO();
+
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -87,9 +91,20 @@ include_once '../controllers/clientController.php';
               <div class="form-group">
                 <input class="form-control" type="password" required name="newMdpClientConfirm" placeholder="Confirmez votre nouveau mot de passe"/>
               </div>
-              <hr>
               <div class="form-group">
-                <input class="form-control" type="text" required name="serialKey" placeholder="Licences"<?php echo $_SESSION['licence']; ?>"/>
+                <?php $licences = $licenceDAO->findAllLicenceByIdClient(7); ?>
+                <select id="licences">
+                  <option value="">--Choisissez votre licence--</option>
+
+                  <?php foreach($licences as $licence): ?>
+                  <?php if($licence->getStatus()): ?>
+                  <option value="<?= $licence->getCodeLicence(); ?>" style="color:green;"><?= $licence->getCodeLicence(); ?></option>
+                  <?php elseif($licence->getStatus() != 1): ?>
+                  <option value="<?= $licence->getCodeLicence(); ?>" style="color:red;"><?= $licence->getCodeLicence(); ?></option>
+                  <?php endif; ?>
+                  <?php endforeach; ?>
+              </select> 
+
               </div>
             </div>
             <div class="col-md-12">
