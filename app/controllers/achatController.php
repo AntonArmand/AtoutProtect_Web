@@ -1,31 +1,21 @@
 <?php
-include_once '../inc/functions.php';
 include_once '../models/dao/achatDAO.php';
 include_once '../models/achatModel.php';
+include_once '../inc/functions.php';
+session_start();
 
-$oneMonth   = isset($_POST['oneMonth']) ? $_POST['oneMonth'] : '';
-$sixMonth   = isset($_POST['sixMonth']) ? $_POST['sixMonth'] : '';
-$unlimited  = isset($_POST['unlimited']) ? $_POST['unlimited'] : '';
+$dateAchat	 	= date('Y-m-d');
+$name	  	 	= $_GET['name'];
+$orderID 		= $_GET['orderID'];
+$amount 		= $_GET['amount'];
+$typeLicence 	= $_GET['typeLicence'];
+$idClient 		= $_SESSION['idClient'];
 
-$date       = new DateTime();
-$date       = $date->format('Y-m-d H:i:s');
-
-if($oneMonth)
+if(($dateAchat != null) && ($name != null) && ($orderID != null) && ($amount != null) && ($idClient != null))
 {
-	
-	
+	$achatDAO = new achatDAO();
+	$achatDAO->insertAchat($orderID, $idClient, $dateAchat, $name, $amount);
+	header('Location: licenceController.php?dateAchat='.$dateAchat.'&idClient='.$idClient.'&typeLicence='.$typeLicence);
 }
 
-
-else if($sixMonth)
-{
-	
-	
-}
-
-
-else if($unlimited)
-{
-	
-	
-}
+?>

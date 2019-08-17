@@ -6,7 +6,8 @@ class licence  {
   private $dateExpiration;
   private $status;
   private $biosNumber;
-  private $clientID;
+  private $typeLicence;
+  private $idClient;
 
 
   /** CONSTRUCTEUR **/
@@ -43,9 +44,15 @@ class licence  {
     {
       return $this->biosNumber;
     }
+
+    function getTypeLicence()
+    {
+      return $this->typeLicence;
+    }
+
     function getClientID()
     {
-      return $this->clientID;
+      return $this->idClient;
     }
 
     /** GETTER -- END **/
@@ -77,9 +84,14 @@ class licence  {
       $this->biosNumber = $biosNumber;
     }   
 
-    function set_clientID($clientID)
+    function set_typeLicence($typeLicence)
     {
-      $this->clientID = $clientID;
+      $this->typeLicence = $typeLicence;
+    }   
+
+    function set_idClient($idClient)
+    {
+      $this->idClient = $idClient;
     }
   /** SETTER -- END **/
 

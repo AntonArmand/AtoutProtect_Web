@@ -12,7 +12,7 @@ class AchatDAO {
       // Récupération des paramètres de configuration BD
       $user = 'aprotect';
       $pass = 'rpi-projet';
-      $host = '';
+      $host = '200.150.100.34';
       $base = 'aprotect';
       $dsn = 'mysql:host=' . $host . ';dbname=' . $base;
       // Création de la connexion
@@ -64,20 +64,24 @@ class AchatDAO {
   }
 
 
-  function insertAchat($idAchat) {
-    $sql = 'INSERT INTO achat(idAchat) VALUES (:idAchat)';
+  function insertAchat($orderID, $idClient, $dateAchat, $name, $amount) {
+    $sql = 'INSERT INTO achat(orderID, idClient, dateAchat, name, amount) VALUES (:orderID, :idClient, :dateAchat, :name, :amount)';
     try {
       $sth = self::get_connexion()->prepare($sql);
       $sth->execute(array(
-        ":idAchat"             =>$idAchat
+        ":orderID"       =>$orderID,
+        ":idClient"      =>$idClient,
+        ":dateAchat"     =>$dateAchat,
+        ":name"          =>$name,
+        ":amount"        =>$amount
       ));
     
   } catch (PDOException $e) {
-      throw new Exception("Erreur lors de la requete SQL : " . $e->getMessage());
+      throw new Exception("Erreur lors de la requête SQL : " . $e->getMessage());
     }
-    
       return $sth;
   }
+
 
 
   function updateAchat($idAchat) {

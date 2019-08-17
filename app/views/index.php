@@ -523,13 +523,12 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> Tous 
     },
     onApprove: function(data, actions) {
       return actions.order.capture().then(function(details) {
-        alert('Transaction completed by ' + details.payer.name.given_name);
+        //alert('Transaction completed by ' + details.payer.name.given_name);
         var name = details.payer.name.given_name;
         var amount = 199;
-        window.location = "../controllers/licenceController.php?orderID=" + data.orderID 
-        																  + "&userID=" + <?php echo $_SESSION["idClient"] ?> 
+        window.location = "../controllers/achatController.php?orderID="   + data.orderID 
         																  + "&name=" + name 
-        																  + "&date=" + date 
+        																  + "&typeLicence=" + 1 
         																  + "&amount=" + amount;
         // Call your server to save the transaction
         return fetch('/paypal-transaction-complete', {
@@ -568,9 +567,13 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> Tous 
     },
     onApprove: function(data, actions) {
       return actions.order.capture().then(function(details) {
-        alert('Transaction completed by ' + details.payer.name.given_name);
+        //alert('Transaction completed by ' + details.payer.name.given_name);
         // Call your server to save the transaction
         var amount = 1499;
+        window.location = "../controllers/achatController.php?orderID="   + data.orderID 
+        																  + "&name=" + name 
+        																  + "&typeLicence=" + 3
+        																  + "&amount=" + amount;        
         return fetch('/paypal-transaction-complete', {
           method: 'post',
           headers: {
@@ -605,10 +608,14 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> Tous 
     },
     onApprove: function(data, actions) {
       return actions.order.capture().then(function(details) {
-        alert('Transaction completed by ' + details.payer.name.given_name);
+        //alert('Transaction completed by ' + details.payer.name.given_name);
         // Call your server to save the transaction
         var amount = 699;
-        return fetch('/paypal-transaction-complete', {
+        window.location = "../controllers/achatController.php?orderID="   + data.orderID 
+        																  + "&name=" + name 
+        																  + "&typeLicence=" + 2 
+        																  + "&amount=" + amount;        
+	    return fetch('/paypal-transaction-complete', {
           method: 'post',
           headers: {
             'content-type': 'application/json'

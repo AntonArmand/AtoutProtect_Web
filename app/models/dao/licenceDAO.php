@@ -1,5 +1,4 @@
 <?php
-include_once '../licenceModel.php';
 
 class LicenceDAO {
 
@@ -34,9 +33,7 @@ private static function get_connexion() {
     } catch (PDOException $e) {
       throw new Exception("Erreur lors de la requête SQL : " . $e->getMessage());
     }
-
         $licence = new licence($row);
-
     return $licence;    
     // Retourne un tableau d'objets
   }
@@ -82,8 +79,8 @@ private static function get_connexion() {
   }
 
 
-  function insertLicence($codeLicence, $dateAchat, $dateExpiration, $status, $biosNumber,$idClient) {
-    $sql = 'INSERT INTO licence(codeLicence, dateAchat, dateExpiration, status, biosNumber, idClient) VALUES (:codeLicence, :dateAchat, :dateExpiration, :status, :biosNumber, :idClient)';
+  function insertLicence($codeLicence, $dateAchat, $dateExpiration, $status, $biosNumber, $typeLicence, $idClient) {
+    $sql = 'INSERT INTO licence(codeLicence, dateAchat, dateExpiration, status, biosNumber, typeLicence, idClient) VALUES (:codeLicence, :dateAchat, :dateExpiration, :status, :biosNumber, :typeLicence, :idClient)';
     try {
       $sth = self::get_connexion()->prepare($sql);
       $sth->execute(array(
@@ -92,8 +89,8 @@ private static function get_connexion() {
         ":dateExpiration"    =>$dateExpiration,
         ":status"            =>$status,
         ":biosNumber"        =>$biosNumber,
+        ":typeLicence"       =>$typeLicence,
         ":idClient"          =>$idClient
-
       ));
     
   } catch (PDOException $e) {

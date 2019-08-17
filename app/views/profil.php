@@ -1,7 +1,8 @@
 <?php
 include_once 'header.php';
 include_once '../controllers/clientController.php';
-include_once '../controllers/licenceController.php';
+include_once '../models/dao/licenceDAO.php';
+include_once '../models/licenceModel.php';
 
 $licenceDAO = new LicenceDAO();
 

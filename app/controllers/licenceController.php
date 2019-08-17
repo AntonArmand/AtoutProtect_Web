@@ -2,32 +2,28 @@
 include_once '../models/dao/licenceDAO.php';
 include_once '../models/licenceModel.php';
 include_once '../inc/functions.php';
+session_start();
 
 $codeLicence 	= generate_licence();
-$biosNumber 	= "01-02-03-04";
+$biosNumber 	= "";
 
 $dateAchat	 	= date('Y-m-d');
-$dateExpiration	= date('Y-m-d', strtotime("+30 days"));
-$name	  	 	= $_GET['name'];
-$orderID 		= $_GET['orderID'];
-$userID 		= 7;
-$status			= true;
+$idClient 		= $_GET['idClient'];
+$typeLicence 	= $_GET['typeLicence'];
+$dateExpiration = date('Y-m-d');
 
-/**echo "dateAchat" + $dateAchat;
-echo "dateExpiration" + $dateExpiration;
-echo "name" + $name;
-echo "orderID" + $orderID;
-echo "userID" + $userID;**/
 
-/**$licenceDAO = new LicenceDAO();
-$licenceDAO->insertLicence($codeLicence, $dateAchat, $dateExpiration, 0, $biosNumber, $userID);
-$licences = $licenceDAO->findAllLicenceByIdClient($userID);**/
+if(($dateAchat != null) && ($idClient != null) && ($dateExpiration != null))
+{
+	$licenceDAO = new LicenceDAO();
+	$licenceDAO->insertLicence($codeLicence, $dateAchat, $dateExpiration, 0, $biosNumber, $typeLicence, $idClient);
+	header('Location: ../views/profil.php');
 
-/**function displayLicence(){
-	foreach ($licences as $licence) {
-		echo $licence->getCodeLicence();
-	}	
 }
-**/
+else
+{
+	header('Location: ../views/index.php');
+}
+
 
 ?>

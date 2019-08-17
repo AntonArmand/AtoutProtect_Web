@@ -5,7 +5,6 @@ class Achat  {
   private $name;
   private $idClient;
   private $dateAchat;
-  private $dateExpiration;
   private $amount;
 
 
@@ -39,10 +38,6 @@ class Achat  {
       return $this->dateAchat;
     }
 
-    function getDateExpiration() 
-    {
-      return $this->dateExpiration;
-    }
     function getAmount() 
     {
       return $this->amount;
@@ -73,10 +68,6 @@ class Achat  {
       $this->dateAchat = $dateAchat;
     }
 
-    function set_dateExpiration($dateExpiration) 
-    {
-      $this->dateExpiration = $dateExpiration;
-    }
     function set_amount($amount) 
     {
       $this->amount = $amount;
