@@ -120,8 +120,8 @@ private static function get_connexion() {
     return $sth;
   }
 
-  function updateClient($idClient, $nomClient, $prenomClient, $mailClient, $mdpClient) {
-    $sql = "UPDATE client SET idClient = :idClient, nomClient = :nomClient, prenomClient = :prenomClient, mailClient = :mailClient, mdpClient = :mdpClient WHERE idClient=:idClient ";
+  function updateClient($idClient, $nomClient, $prenomClient, $mailClient, $mdpClient, $dateModificationClient) {
+    $sql = "UPDATE client SET idClient = :idClient, nomClient = :nomClient, prenomClient = :prenomClient, mailClient = :mailClient, mdpClient = :mdpClient, :dateModificationClient = :dateModificationClient WHERE idClient=:idClient ";
     try {
       $sth = self::get_connexion()->prepare($sql);
       $sth->execute(array(
@@ -130,6 +130,7 @@ private static function get_connexion() {
         ":prenomClient"           =>$prenomClient,
         ":mailClient"             =>$mailClient,
         ":mdpClient"              =>$mdpClient,
+        ":dateModificationClient" =>$dateModificationClient
       ));    
     } catch (PDOException $e) {
       throw new Exception("Erreur lors de la requête SQL : " . $e->getMessage());

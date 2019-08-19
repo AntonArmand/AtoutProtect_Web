@@ -8,6 +8,7 @@ if($_GET){
 $codeLicence = $_GET['codeLicence'];
 $email = $_GET['email'];
 $password = $_GET['password'];
+$biosNumber = $_GET['biosNumber'];
 
 
 $data = array(
@@ -45,17 +46,17 @@ $dateAchat = $licence->getDateAchat();
 
 if($type == 1)
 {
-	$dateExpiration = strtotime($dateAchat. ' +30 days');
+	$dateExpiration = strtotime('+30 days',strtotime($dateAchat));
 }
 if($type == 2)
 {
-	$dateExpiration = strtotime($dateAchat. ' +180 days');
+	$dateExpiration = strtotime('+180 days',strtotime($dateAchat));
 
 }
 if($type == 3)
 {
-	$dateExpiration = strtotime($dateAchat. ' +18000 days');
+	$dateExpiration = strtotime('+90000 days',strtotime($dateAchat));
 
 }
-//$licenceDAO->updateLicence($codeLicence, $dateExpiration);
+$licenceDAO->updateLicence($codeLicence, $dateExpiration, $biosNumber);
 }

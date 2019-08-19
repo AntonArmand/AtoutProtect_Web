@@ -60,20 +60,23 @@ else if($save)
     }
     else
     {
+
+        $dateModificationClient = date("Y-m-d");
+
         $clientDAO = new ClientDAO();
         $_SESSION['idClient'] = 2;
         $client = $clientDAO->findByIdClient($_SESSION['idClient']);
         if($client->getMdpClient() == hashage($mdpClient))
         {
             $clientDAO->updateClient($client->getIdClient(), $nomClient, 
-                $prenomClient, $mailClient, hashage($newMdpClient));
+            $prenomClient, $mailClient, hashage($newMdpClient), $dateModificationClient);
             $client = $clientDAO->findByIdClient($_SESSION['idClient']);
             $_SESSION['idClient'] = $client->getIdClient();
             $_SESSION['nomClient'] = $client->getNomClient();
             $_SESSION['prenomClient'] = $client->getPrenomClient();
             $_SESSION['mailClient'] = $client->getMailClient();
             $_SESSION['dateInscriptionClient'] = $client->getDateInscriptionClient();
-            $_SESSION['dateModificationClient'] = $client->getDateModificationClient();
+            $_SESSION['dateModificationClient'] = $dateModificationClient;
 
         }
         else
