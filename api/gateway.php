@@ -3,7 +3,7 @@ include_once '../app/models/dao/licenceDAO.php';
 include_once '../app/models/licenceModel.php';
 include_once '../app/models/dao/clientDAO.php';
 include_once '../app/models/clientModel.php';	
-include_once '../app/	inc/functions.php';
+include_once '../app/inc/functions.php';
 
 $codeLicence = $_POST['codeLicence'];
 
@@ -11,7 +11,7 @@ $licenceDAO = new licenceDAO();
 $clientDAO = new clientDAO();
 
 $licence = $licenceDAO->findByCodeLicence($codeLicence);
-$client  = $clientDAO->findByEmail($_POST['email'], $_POST['password']);
+$client  = $clientDAO->findByEmail($_POST['email'], hashage($_POST['password']));
 
 if($client->getIdClient() == $licence->getClientID())
 {
