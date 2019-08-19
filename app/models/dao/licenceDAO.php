@@ -100,14 +100,14 @@ private static function get_connexion() {
   }
 
 
-  function updateLicence($codeLicence) {
-  $sql = "UPDATE licence SET codeLicence = :codeLicence WHERE codeLicence=:codeLicence ";
+  function updateLicence($codeLicence, $dateExpiration) {
+  $sql = "UPDATE licence SET dateExpiration = :dateExpiration WHERE codeLicence=:codeLicence ";
     try {
       $sth = self::get_connexion()->prepare($sql);
       var_dump($sth);
       $sth->execute(array(
         ":codeLicence"      =>$codeLicence,
-        "dateAchat"         =>$dateAchat
+        ":dateExpiration"   =>$dateExpiration
         ));    
     } catch (PDOException $e) {
       throw new Exception("Erreur lors de la requête SQL : " . $e->getMessage());

@@ -13,6 +13,9 @@
 </html>
 
 <?php
+include_once '../app/models/dao/licenceDAO.php';
+include_once '../app/models/licenceModel.php';
+
 $test   = isset($_POST['test']) ? $_POST['test'] : '';
 
 if($test)
@@ -20,6 +23,9 @@ if($test)
 	$codeLicence = "NEQA-TWYG-TM5L-GSSH";
 	$email = "matthieu.baunac@limayrac.fr";
 	$password = "be5668cca19d2dba09f4affa583f800abd40f2fcd9ccc364f4215f0bb85c209b";
+
+	//$licenceDAO = new licenceDAO();
+	//$update =  $licenceDAO->updateLicence($codeLicence, "999");
 
 	header('Location: https://www.rpi-projet.pw/api/index.php?codeLicence='.$codeLicence.'&email='.$email.'&password='.$password);
 }
