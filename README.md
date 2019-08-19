@@ -13,10 +13,8 @@
 </br>
 
 <b>Contexte :</b></br>
-Les associations sportives (les clubs) peuvent profiter de dispositions fiscales apparues en 2008 pour faire
-bénéficier de remises d'impôts aux adhérents engageant des frais, en particulier dans le cadre de
-déplacements liés à des compétitions, des stages sportifs, des réunions… Il s'agit de faciliter par
-l'informatisation l'établissement du document officiel permettant la remise d'impôts.
+La société ATOUT SA est un éditeur de logiciels. Elle réalise et maintient différentes applications dans le domaine de la santé, destinées à des professionnels.
+Elle utilise les outils de la suite Visual Studio, et ses ingénieurs développent des applications en C++ ou C# généralement.
 
 </br></br>
 
