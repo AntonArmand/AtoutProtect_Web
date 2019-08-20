@@ -51,10 +51,17 @@ private static function get_connexion() {
     } catch (PDOException $e) {
       throw new Exception("Erreur lors de la requête SQL : " . $e->getMessage());
     }
-
-    $client = new Client($row);
-
-    return $client;    
+    if($row = null)
+    {
+      echo 'Mot de passe ou identifiant incorrect.';
+      return;
+    }
+    else
+    {
+      $client = new Client($row);
+      return $client;  
+    }
+  
     // Retourne un tableau d'objets
   }
 
